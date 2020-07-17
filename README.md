@@ -14,9 +14,8 @@ Nosso passatempo favorito nessa quarentena tem sido assistir filmes e seriados, 
 
 Para auxiliar você nesse processo fizemos um protótipo rápido utilizando o Figma. Se quiser conferir é só seguir o link:
 
-```
-https://www.figma.com/proto/UE8zfSxxf8K0TzpgslbYhz/CinemAPP?node-id=1%3A28&scaling=contain
-```
+[https://www.figma.com/proto/UE8zfSxxf8K0TzpgslbYhz/CinemAPP?node-id=1%3A28&scaling=contain](https://www.figma.com/proto/UE8zfSxxf8K0TzpgslbYhz/CinemAPP?node-id=1%3A28&scaling=contain)
+
 
 Para facilitar um pouco mais as coisas, já deixamos separada uma chave de acesso para a API (ou você pode criar a sua também):
 
