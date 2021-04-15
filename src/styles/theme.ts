@@ -1,11 +1,13 @@
 export default {
   colors: {
-    background: "#03070B",
-    shape: "#423654",
-    inputBackground: "#6152C8",
+    background: "#423654",
+    shape: "#03070B",
+    inputBackground: "#423784",
+    purple: "#6152C8",
     red: "#ECCDDA",
     skeleton: "#969590",
     blue: "#1851ad",
+    white: "#f1f2f3",
   },
 
   fontFamily: {
@@ -17,23 +19,23 @@ export default {
 
   textVariants: {
     title: {
-      fontSize: "20px",
+      fontSize: "28px",
       fontFamily: "Montserrat_800ExtraBold",
       lineHeight: "22px",
     },
-    body1: {
-      fontSize: "18px",
+    subtitle: {
+      fontSize: "22px",
       fontFamily: "Montserrat_700Bold",
       lineHeight: "22px",
     },
-    body2: {
-      fontSize: "16px",
+    text: {
+      fontSize: "18px",
       fontFamily: "Montserrat_400Regular",
       lineHeight: "20px",
     },
-    body3: {
-      fontSize: "14px",
-      fontFamily: "Montserrat_300Light",
+    label: {
+      fontSize: "20px",
+      fontFamily: "Montserrat_700Bold",
       lineHeight: "18px",
     },
     input: {
