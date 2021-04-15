@@ -30,6 +30,15 @@ export function FavoriteCityListProvider({
       JSON.stringify(favoriteCity)
     );
   }
+  async function getStore() {
+    let cityList = await AsyncStorage.getItem("@FavoriteCityList");
+
+    if (cityList) {
+      setFavoriteCityList(JSON.parse(cityList));
+    } else {
+      return;
+    }
+  }
 
   return (
     <FavoriteCityContext.Provider value={{}}>
