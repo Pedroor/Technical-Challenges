@@ -3,7 +3,7 @@ import { gql } from "@apollo/client";
 
 export const GET_CITY_BY_NAME = gql`
   {
-    getCityByName(name: "Fortaleza", config: { units: metric }) {
+    getCityByName(name: "Fo", config: { units: metric }) {
       name
       country
       coord {
