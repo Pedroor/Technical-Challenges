@@ -1,8 +1,6 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
 
-interface getCityByName {}
-
 interface City {
   name: string;
   country: string;
@@ -42,3 +40,39 @@ interface Temperature {
   min: number;
   max: number;
 }
+
+const GET_CITY_BY_NAME = gql`
+  {
+    getCityByName(name: "Fortaleza", config: { units: metric }) {
+      name
+      country
+      coord {
+        lon
+        lat
+      }
+      weather {
+        timestamp
+        summary {
+          title
+          description
+          icon
+        }
+        temperature {
+          actual
+          feelsLike
+          min
+          max
+        }
+        wind {
+          speed
+          deg
+        }
+        clouds {
+          all
+          visibility
+          humidity
+        }
+      }
+    }
+  }
+`;
