@@ -10,7 +10,7 @@ export const TemperatureValue = styled.Text`
   color: ${props => props.theme.colors.white};
 `;
 
-export const Container = styled.View`
+export const InputContainer = styled.View`
   flex-direction: row;
   align-items: center;
   margin: 65px 15px 15px 15px;

@@ -1,3 +1,7 @@
+export interface GetCityByName {
+  getCityByName: City;
+}
+
 export interface City {
   name: string;
   country: string;

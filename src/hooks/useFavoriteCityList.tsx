@@ -16,6 +16,7 @@ type FavoriteCityListProviderProps = {
 type FavoriteCityListContextData = {
   favoriteCityList: City[];
   handleAddCity: (city: City) => void;
+  isCityOnTheList: (cityName: string) => boolean;
 };
 
 export const FavoriteCityContext = createContext<FavoriteCityListContextData>(
@@ -29,7 +30,7 @@ export function FavoriteCityListProvider({
 
   useEffect(() => {
     getStore();
-  }, [favoriteCityList]);
+  }, []);
 
   async function setStore(favoriteCity: City[]) {
     await AsyncStorage.setItem(
@@ -47,20 +48,36 @@ export function FavoriteCityListProvider({
     }
   }
 
+  function isCityOnTheList(cityName: string) {
+    let existingCity = favoriteCityList.find(
+      cityInList => cityInList.name === cityName
+    );
+
+    if (!existingCity) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   async function handleAddCity(city: City) {
+    console.log(city.name);
     let existingCity = favoriteCityList.find(
       cityInList => cityInList.name === city.name
     );
-    if (existingCity) {
+    if (!existingCity) {
       setFavoriteCityList([...favoriteCityList, city]);
       setStore(favoriteCityList);
+      console.log("adicionei a cidade");
     } else {
       alert("Essa cidade ja foi adicionada!");
     }
   }
 
   return (
-    <FavoriteCityContext.Provider value={{ handleAddCity, favoriteCityList }}>
+    <FavoriteCityContext.Provider
+      value={{ handleAddCity, isCityOnTheList, favoriteCityList }}
+    >
       {children}
     </FavoriteCityContext.Provider>
   );
