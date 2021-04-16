@@ -5,6 +5,7 @@ import { useQuery } from "@apollo/client";
 import { City, GetCityByName } from "../../graphql/types";
 import { GET_CITY_BY_NAME } from "../../graphql/queries";
 import { useFavoriteCityList } from "../../hooks/useFavoriteCityList";
+import { CityCard } from "../../components/CityCard";
 
 import {
   Container,
@@ -13,6 +14,7 @@ import {
   InputContainer,
   FavoriteListButton,
   ButtonText,
+  CityList,
 } from "./styles";
 
 interface InputReference extends TextInput {
@@ -22,7 +24,8 @@ interface InputReference extends TextInput {
 export function Home() {
   const inputRef = useRef(null);
   const [displayValue, setDisplayValue] = useState("");
-  const [cityName, setCityName] = useState("Madrid");
+  const [cityName, setCityName] = useState("");
+
   const {
     favoriteCityList,
     handleAddCity,
@@ -37,21 +40,9 @@ export function Home() {
     console.log("LOADING...");
   }
 
-  useEffect(() => {
-    console.log("LISTA", favoriteCityList);
+  function handlePressButton() {
+    setCityName(displayValue);
     if (data !== undefined) handleAddCity(data.getCityByName);
-    console.log("DISPLAY", displayValue);
-  }, [data]);
-
-  function handlePressButton(cityName: string) {
-    let conditional = isCityOnTheList(cityName);
-    console.log(conditional);
-
-    if (conditional) {
-      alert("Essa cidade ja foi adicionada!");
-    } else {
-      setCityName(displayValue);
-    }
   }
 
   return (
@@ -69,7 +60,7 @@ export function Home() {
       </InputContainer>
       <FavoriteListButton
         onPress={() => {
-          handlePressButton(data?.getCityByName.name || "");
+          handlePressButton();
         }}
       >
         <ButtonText>Adicionar cidade</ButtonText>
@@ -80,6 +71,17 @@ export function Home() {
           style={{ paddingLeft: 10 }}
         />
       </FavoriteListButton>
+
+      <CityList
+        data={favoriteCityList}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 12, paddingHorizontal: 12 }}
+        keyExtractor={city => String(city.name)}
+        numColumns={2}
+        renderItem={({ item: city }) => {
+          return <CityCard city={city} />;
+        }}
+      />
     </Container>
   );
 }

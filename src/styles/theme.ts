@@ -29,7 +29,7 @@ export default {
       lineHeight: "22px",
     },
     text: {
-      fontSize: "18px",
+      fontSize: "15px",
       fontFamily: "Montserrat_400Regular",
       lineHeight: "20px",
     },

@@ -1,4 +1,6 @@
 import styled from "styled-components/native";
+import { FlatList } from "react-native";
+import { City } from "../../graphql/types";
 
 export const Container = styled.View`
   flex: 1;
@@ -57,4 +59,9 @@ export const ButtonText = styled.Text`
   color: ${props => props.theme.colors.inputBackground};
   ${({ theme }) => theme.textVariants.text};
   text-align: center;
+`;
+
+export const CityList = styled(FlatList as new () => FlatList<City>)`
+  flex: 1;
+  margin: 8px;
 `;
