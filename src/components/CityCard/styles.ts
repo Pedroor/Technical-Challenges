@@ -5,7 +5,6 @@ export const Container = styled.View`
 `;
 
 export const CardContainer = styled.View`
-  flex: 1;
   width: 95%;
   height: 100px;
   margin: 8px;

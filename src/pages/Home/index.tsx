@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useRef } from "react";
-import { View, TextInput } from "react-native";
+import React, { useState, useEffect } from "react";
+import { View, Text } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { useQuery } from "@apollo/client";
-import { City, GetCityByName } from "../../graphql/types";
+import { GetCityByName } from "../../graphql/types";
 import { GET_CITY_BY_NAME } from "../../graphql/queries";
 import { useFavoriteCityList } from "../../hooks/useFavoriteCityList";
 import { CityCard } from "../../components/CityCard";
@@ -17,27 +17,34 @@ import {
   CityList,
 } from "./styles";
 
-interface InputReference extends TextInput {
-  value: string;
-}
-
 export function Home() {
-  const inputRef = useRef(null);
   const [displayValue, setDisplayValue] = useState("");
   const [cityName, setCityName] = useState("");
 
-  const {
-    favoriteCityList,
-    handleAddCity,
-    isCityOnTheList,
-  } = useFavoriteCityList();
+  const { favoriteCityList, handleAddCity } = useFavoriteCityList();
 
   const { data, error, loading } = useQuery<GetCityByName>(GET_CITY_BY_NAME, {
     variables: { cityName },
   });
+  useEffect(() => {
+    if (data !== undefined) handleAddCity(data.getCityByName);
+  }, [data]);
 
   if (loading) {
-    console.log("LOADING...");
+    return (
+      <Container>
+        <View
+          style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+        >
+          <Text style={{ fontSize: 18, fontWeight: "bold", color: "white" }}>
+            Carregando...
+          </Text>
+          <Text style={{ fontSize: 18, fontWeight: "bold", color: "white" }}>
+            Aguarde
+          </Text>
+        </View>
+      </Container>
+    );
   }
 
   function handlePressButton() {
@@ -50,7 +57,6 @@ export function Home() {
       <InputContainer>
         <InputArea>
           <Input
-            ref={inputRef}
             value={displayValue}
             placeholder="Nome da cidade"
             placeholderTextColor="#f1f2f3"

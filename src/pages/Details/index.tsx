@@ -5,6 +5,7 @@ import { City } from "../../graphql/types";
 import { View, Alert, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 import {
   Container,
@@ -70,16 +71,25 @@ export function Details() {
 
   return (
     <Container>
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <CityName>{city.name}</CityName>
-        <CityName>, </CityName>
-        <CountryName>{city.country}</CountryName>
+      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+        <AntDesign
+          name="arrowleft"
+          size={28}
+          color="white"
+          onPress={() => navigation.goBack()}
+        />
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <CityName>{city.name}</CityName>
+          <CityName>, </CityName>
+          <CountryName>{city.country}</CountryName>
+        </View>
+        <View />
       </View>
       {isCelsius ? (
         <View

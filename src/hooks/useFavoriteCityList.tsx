@@ -70,9 +70,25 @@ export function FavoriteCityListProvider({
     if (!existingCity) {
       setFavoriteCityList([...favoriteCityList, city]);
       setStore(favoriteCityList);
-      console.log("adicionei a cidade");
+      showMessage({
+        message: `A cidade de ${city.name} foi adicionada a sua lista`,
+        description: "Que tal consultar sua lista de cidades?",
+        type: "success",
+        icon: "auto",
+        floating: true,
+        duration: 3000,
+        position: "top",
+      });
     } else {
-      alert("Essa cidade ja foi adicionada!");
+      showMessage({
+        message: `A cidade de ${city.name} ja foi adicionada a sua lista!`,
+        description: "Que tal consultar sua lista de cidades?",
+        type: "warning",
+        icon: "auto",
+        floating: true,
+        duration: 3000,
+        position: "bottom",
+      });
     }
   }
 
@@ -91,7 +107,7 @@ export function FavoriteCityListProvider({
       type: "danger",
       icon: "auto",
       floating: true,
-      duration: 2000,
+      duration: 3000,
       position: "top",
     });
   }
