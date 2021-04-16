@@ -18,6 +18,11 @@ export default {
   },
 
   textVariants: {
+    temperatureDetails: {
+      fontSize: "48px",
+      fontFamily: "Montserrat_800ExtraBold",
+      lineHeight: "22px",
+    },
     title: {
       fontSize: "28px",
       fontFamily: "Montserrat_800ExtraBold",

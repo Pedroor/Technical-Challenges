@@ -3,13 +3,20 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   flex: 1;
   background-color: ${props => props.theme.colors.background};
-  justify-content: center;
-  align-items: center;
+  padding-top: 75px;
 `;
 
 export const CityName = styled.Text`
-  ${props => props.theme.textVariants.subtitle};
   color: ${props => props.theme.colors.white};
+  ${({ theme }) => theme.textVariants.title};
+  padding-top: 8px;
+  text-align: center;
+`;
+export const CountryName = styled.Text`
+  color: ${props => props.theme.colors.skeleton};
+  ${({ theme }) => theme.textVariants.title};
+  padding-top: 8px;
+  text-align: center;
 `;
 
 export const TemperatureValue = styled.Text`
@@ -31,8 +38,26 @@ export const RemoveCityFromListButton = styled.TouchableOpacity`
   background-color: #bd190d;
 `;
 
+export const ChangeTemperatureButton = styled(RemoveCityFromListButton)`
+  background-color: ${props => props.theme.colors.white};
+  width: 70%;
+`;
+
 export const ButtonText = styled.Text`
   color: ${props => props.theme.colors.white};
   ${({ theme }) => theme.textVariants.text};
   text-align: center;
+`;
+
+export const Temperature = styled.Text`
+  ${({ theme }) => theme.textVariants.temperatureDetails};
+  color: ${props => props.theme.colors.white};
+  padding-top: 50%;
+  font-weight: bold;
+  text-align: center;
+`;
+export const DetailsText = styled.Text`
+  font-size: 20px;
+  padding: 8px 20px 88px 20px;
+  color: ${props => props.theme.colors.white};
 `;
