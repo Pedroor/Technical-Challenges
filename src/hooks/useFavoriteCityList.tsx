@@ -8,6 +8,7 @@ import React, {
 import AsyncStorage from "@react-native-community/async-storage";
 import { City } from "../graphql/types";
 import { Alert } from "react-native";
+import { showMessage } from "react-native-flash-message";
 
 type FavoriteCityListProviderProps = {
   children: ReactNode;
@@ -16,6 +17,7 @@ type FavoriteCityListProviderProps = {
 type FavoriteCityListContextData = {
   favoriteCityList: City[];
   handleAddCity: (city: City) => void;
+  handleRemoveCity: (city: City) => void;
   isCityOnTheList: (cityName: string) => boolean;
 };
 
@@ -74,9 +76,34 @@ export function FavoriteCityListProvider({
     }
   }
 
+  function handleRemoveCity(city: City) {
+    let newList: City[] = [];
+
+    newList = favoriteCityList.filter(
+      cityOnTheList => cityOnTheList.name !== city.name
+    );
+    AsyncStorage.setItem("@FavoriteCityList", JSON.stringify(newList));
+    setFavoriteCityList(newList);
+
+    showMessage({
+      message: `A cidade de ${city.name} foi removida da sua`,
+      description: "Que tal consultar sua lista de cidades?",
+      type: "danger",
+      icon: "auto",
+      floating: true,
+      duration: 2000,
+      position: "top",
+    });
+  }
+
   return (
     <FavoriteCityContext.Provider
-      value={{ handleAddCity, isCityOnTheList, favoriteCityList }}
+      value={{
+        handleAddCity,
+        isCityOnTheList,
+        handleRemoveCity,
+        favoriteCityList,
+      }}
     >
       {children}
     </FavoriteCityContext.Provider>
