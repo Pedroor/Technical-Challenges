@@ -1,0 +1,73 @@
+<h1 align="center">
+  <img alt="Marvel" src="data:image/jpeg;base64,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" width="250px" />
+</h1>
+
+
+
+<p align="center">
+  <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#hammer-iniciando-mobile">Tecnologias</a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-começando">Começando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#thought_balloon-começando">Inspiração</a>
+</p>
+
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
+
+</h1>
+
+## :page_with_curl: Sobre
+Este repositório contém um desafio de um processo seletivo.
+
+Weather é uma aplicação no qual o usuário pode adicionar, remover e visualisar as cidades adicionadas.Para obter os dados dos Heróis foi utilizada uma em [GraphQL](https://graphql-weather-api.herokuapp.com/).
+
+O objetivo principal desse projeto foi colocar meus conhecimentos em React-Native na prática e acima de tudo me desafiar a aprender um tecnologia nova que foi o GraphQL.
+
+## :hammer: Tecnologias
+
+Este projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Expo](https://expo.io/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [GraphQL](https://graphql.org/)
+- [ApolloClient](https://www.apollographql.com/docs/)
+- [React Navigation](https://reactnavigation.org/)
+- [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
+- [Styled Components](https://styled-components.com/)
+- [@expo/vector-icons](https://docs.expo.io/guides/icons/)
+- [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
+
+## :books: Requisitos
+- Ter [**Git**](https://git-scm.com/) para clonar o projeto.
+- Ter [**Node.js**](https://nodejs.org/en/) instalado.
+- Um dispositivo ou emulador iOS ou Android
+
+## :rocket: Começando
+``` bash
+  # Clonar o projeto:
+  $ https://github.com/Pedroor/weather-challenge.git
+
+  # Entrar no diretório:
+  $ cd weather-challenge
+  
+  # Instalar as dependências:
+  $ yarn
+```
+
+## :iphone: Iniciando mobile
+```bash
+  # Entrar no diretório do mobile:
+  $ cd weather-challenge
+
+  # Iniciar a aplicação:
+  $ expo start
+```
+
+# :thought_balloon: Inspiração
+- Design inspirado pela (https://dribbble.com/shots/15292603-Weather-Conceptual-App-Design) feito por [adinyanuar](https://dribbble.com/adinyanuar7).
+
+Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
