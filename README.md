@@ -16,6 +16,13 @@
    <h1>
      :hammer: Principais Tecnologias
   </h1>
+  
+- [Expo](https://expo.io/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [GraphQL](https://graphql.org/)
+- [ApolloClient](https://www.apollographql.com/docs/)
+- [React Navigation](https://reactnavigation.org/)
+-  [Styled Components](https://styled-components.com/)
 
 <h1 align="center">
  <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
