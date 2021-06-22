@@ -13,7 +13,10 @@
  <h1 align="center">
     Weather
   </h1>
- :hammer: Tecnologias
+   <h1>
+     :hammer: Principais Tecnologias
+  </h1>
+
 <h1 align="center">
  <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
  <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
