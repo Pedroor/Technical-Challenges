@@ -25,7 +25,7 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
   <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
 </h1>
 
-  :hammer: Tecnologias
+##  :hammer: Tecnologias
 - [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
