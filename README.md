@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Wheater" src="http://gph.is/1VaXunO" width="250px" />
+  <img alt="Wheater" src="https://media.giphy.com/media/AeHLxU7TZXCPS/giphy.gif" width="250px" />
 </h1>
 
 <p align="center">
