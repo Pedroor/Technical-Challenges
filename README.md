@@ -11,11 +11,7 @@
  
 </p>
 
-<h1 align="center">
- <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
 
-</h1>
 
 ## :page_with_curl: Sobre
 
@@ -37,7 +33,16 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
  <img alt="Home" src="https://i.imgur.com/jo6FzkI.png" width="400" />
   </h1>
   
-
+  <h1 align="center">
+  <img alt="Wheater" src="https://media.giphy.com/media/TVpeXDi8xTlyo/giphy.gif" width="250px" />
+</h1>
+  
+##  :hammer: Tecnologias
+- [Expo](https://expo.io/)
+- [GraphQL](https://graphql.org/)
+- [ApolloClient](https://www.apollographql.com/docs/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
 
 ## :hammer: Tecnologias
 
