@@ -91,7 +91,7 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
 
 ```bash
   # Entrar no diretório do mobile:
-  $ cd weather-challenge
+  $ cd Technical-Challenges/Nome do Projeto desejado
 
   # Iniciar a aplicação:
   $ expo start ou react-native run-android
