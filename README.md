@@ -4,11 +4,18 @@
 
 <p align="center">
   <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hammer-iniciando-mobile">Projetos</a>
-  &nbsp;&nbsp;&nbsp;
+  <a href="#books-requisitos">Projetos</a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-requisitos">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-começando">Observações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  
 </p>
 
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
+
+</h1>
 
 ## :page_with_curl: Sobre
 
@@ -33,26 +40,6 @@ Algumas das muitas tecnologias que acabei utilizando:
 - [Axios](https://github.com/axios/axios)
 - [@expo/vector-icons](https://docs.expo.io/guides/icons/)
 - [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
-
- <h1 align="center">
-    Weather
-  </h1>
-   <h1>
-     :hammer: Principais Tecnologias
-  </h1>
-  
-- [Expo](https://expo.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [GraphQL](https://graphql.org/)
-- [ApolloClient](https://www.apollographql.com/docs/)
-- [React Navigation](https://reactnavigation.org/)
--  [Styled Components](https://styled-components.com/)
-
-<h1 align="center">
- <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
-
-</h1>
 
 ## :books: Requisitos
 
