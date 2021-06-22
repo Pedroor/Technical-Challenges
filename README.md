@@ -25,18 +25,19 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
   <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
 </h1>
 
-
-<h1 align="center">
- <img alt="Home" src="https://i.imgur.com/WrfJrT8.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/jo6FzkI.png" width="400" />
-  </h1>
-  
   :hammer: Tecnologias
 - [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
 - [React Query](https://react-query.tanstack.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/WrfJrT8.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/jo6FzkI.png" width="400" />
+  </h1>
+  
+
 
 ## :hammer: Tecnologias
 
