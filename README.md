@@ -44,6 +44,12 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
 - [TypeScript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
 
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
+
+</h1>
+
 ## :hammer: Tecnologias
 
 Algumas das muitas tecnologias que acabei utilizando:
