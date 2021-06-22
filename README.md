@@ -19,24 +19,25 @@
 
 ## :page_with_curl: Sobre
 
-Este repositório contém um desafio de um processo seletivo.
-
-Weather é uma aplicação no qual o usuário pode adicionar, remover e visualisar as cidades adicionadas.Para obter os dados dos Heróis foi utilizada uma em [GraphQL](https://graphql-weather-api.herokuapp.com/).
-
-O objetivo principal desse projeto foi colocar meus conhecimentos em React-Native na prática e acima de tudo me desafiar a aprender um tecnologia nova que foi o GraphQL.
+Este repositório contém os desafios técnicos que tive que desenvolver ao longo de alguns processos seletivos que participei durante minha jornada como desenvolvedor, cada pasta neste repositório é referente a um desafio específico onde há uma explicação do projeto, tecnologias utilizadas é como executar localmente.
 
 ## :hammer: Tecnologias
 
-Este projeto foi desenvolvido com as seguintes tecnologias:
+Algumas das muitas tecnologias que acabei utilizando:
 
 - [Expo](https://expo.io/)
+- [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [GraphQL](https://graphql.org/)
 - [ApolloClient](https://www.apollographql.com/docs/)
 - [React Navigation](https://reactnavigation.org/)
 - [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
+- [React Query](https://react-query.tanstack.com/)
+- [Redux](https://redux.js.org/)
+- [Redux-Sagas](https://redux-saga.js.org/)
 - [Styled Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
 - [@expo/vector-icons](https://docs.expo.io/guides/icons/)
 - [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
 
@@ -50,10 +51,10 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ```bash
   # Clonar o projeto:
-  $ https://github.com/Pedroor/weather-challenge.git
+  $ https://github.com/Pedroor/Technical-Challenges.git
 
   # Entrar no diretório:
-  $ cd weather-challenge
+  $ cd Technical-Challenges/Nome do Projeto desejado
 
   # Instalar as dependências:
   $ yarn
@@ -66,11 +67,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
   $ cd weather-challenge
 
   # Iniciar a aplicação:
-  $ expo start
+  $ expo start ou react-native run-android
 ```
-
-# :thought_balloon: Inspiração
-
-- Design inspirado pela (https://dribbble.com/shots/15292603-Weather-Conceptual-App-Design) feito por [adinyanuar](https://dribbble.com/adinyanuar7).
 
 Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
