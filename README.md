@@ -50,25 +50,23 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
 
 </h1>
 
-## :hammer: Tecnologias
+<h1 align="center">
+  <img alt="Marvel" src="https://wallpaperaccess.com/full/342092.jpg" width="250px" />
+</h1>
 
-Algumas das muitas tecnologias que acabei utilizando:
-
+##  :hammer: Tecnologias
 - [Expo](https://expo.io/)
-- [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [GraphQL](https://graphql.org/)
-- [ApolloClient](https://www.apollographql.com/docs/)
-- [React Navigation](https://reactnavigation.org/)
-- [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
-- [React Query](https://react-query.tanstack.com/)
-- [Redux](https://redux.js.org/)
-- [Redux-Sagas](https://redux-saga.js.org/)
 - [Styled Components](https://styled-components.com/)
-- [Axios](https://github.com/axios/axios)
-- [@expo/vector-icons](https://docs.expo.io/guides/icons/)
-- [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
+- [React Query](https://react-query.tanstack.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://media.tenor.com/images/b705d5681438f3ef56611f87fa707704/tenor.gif" width="400" />
+
+</h1>
+
+
 
 ## :books: Requisitos
 
