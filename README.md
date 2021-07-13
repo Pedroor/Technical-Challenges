@@ -24,7 +24,7 @@ Chave de API: 925eba28
 Exemplo requisição: GET http://www.omdbapi.com/?apikey=925eba28&s=batman
 ```
 
-Você pode desenvolver uma solução web ou mobile (react-native), se escolher a primeira opção é importante que consigamos utilizá-la também em nossos celulares.
+Você pode desenvolver uma solução web ou mobile (react-native, ios ou android), se escolher a primeira opção é importante que consigamos utilizá-la também em nossos celulares.
 
 ## Entrega da sua solução
 
