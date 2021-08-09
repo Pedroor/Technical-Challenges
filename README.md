@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1 align="center">.
   <img alt="Wheater" src="https://media.giphy.com/media/AeHLxU7TZXCPS/giphy.gif" width="400px" />
 </h1>
 
