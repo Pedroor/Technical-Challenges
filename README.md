@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <h1 align="center">.
   <img alt="Wheater" src="https://media.giphy.com/media/AeHLxU7TZXCPS/giphy.gif" width="400px" />
 </h1>
@@ -15,6 +15,8 @@
 ## :page_with_curl: Sobre
 
 Este repositório contém os desafios técnicos que tive que desenvolver ao longo de alguns processos seletivos que participei durante minha jornada como desenvolvedor, cada pasta neste repositório é referente a um desafio específico onde há uma explicação do projeto, tecnologias utilizadas é como executar localmente.
+
+PS: Cada repositório possui um arquivo README específico explicando mais detalhadamente o que faz a aplicação.
 
 
 <h1 align="center">
