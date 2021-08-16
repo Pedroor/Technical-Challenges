@@ -80,38 +80,6 @@ No projeto também utilizei alguns patterns como:
 - [DUCKS](https://blog.rocketseat.com.br/estrutura-redux-escalavel-com-ducks/)
 
 
-## :books: Requisitos
-- Ter [**Git**](https://git-scm.com/) para clonar o projeto.
-- - Ter [**React-Native**](https://reactnative.dev/docs/environment-setup) configurado para executar o projeto.
-- Ter [**Node.js**](https://nodejs.org/en/) instalado.
-- Um dispositivo ou emulador Android
-
-## :rocket: Começando
-``` bash
-  # Clonar o projeto:
-  $ https://github.com/Pedroor/Technical-Challenges.git
-
-  # Entrar no diretório:
-  $ cd Technical-Challengs/EnterpriseApp
-  
-  # Instalar as dependências:
-  $ yarn
-```
-
-## :iphone: Iniciando mobile
-```bash
-  # No mesmo diretorio abrir 2 consoles no terminal:
-  # No primeiro console:
-   
-  $ react-native start
-
-  # No segundo console:
-  $ react-native run-android
-```
-
-
-
-
 <h1 align="center">
   <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
 </h1>
