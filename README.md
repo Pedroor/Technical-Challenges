@@ -32,25 +32,8 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
 
 </h1>
 
-## :page_with_curl: Sobre
-Este repositório contém o código fonte de um teste técnico.
-
-O teste consistia em consumir uma api que utiliza o padrão o OAuth 2.0, no total são 5 endpoints:
-1 endpoint de autenticação
-1 endpoint de listar empresas
-1 endpoint de listar empresas por id
-1 endpoint de filtrar empresar por tipo ou nome
-1 endpoint para coletar uma imagem
-
-Qualquer dúvida a collection com toda a documentação da api esta no repositório.
 
 ## :hammer: Tecnologias
-
-Este projeto foi desenvolvido com as seguintes tecnologias:
-
-Essas foram as principais libs que optei utilizar, meu objetivo por mais que a aplicação fosse simples era de fazer algo escalável e de fácil manutenção,
-por conta disso optei por utilizar o Redux e desenvolver o projeto utilizando a CLI do RN.
-Utilizei o Typescript porque é a minha zona de conforto e acho que agrega muito no projeto, Utilizei Styled-Components para a criação dos components visuais pois tem uma boa integração com o Typescript, Axios para requisições AJAX, Redux-Persist + AsyncStorage para persistência de dados, Vscode + Prettier tbm por questão de zona de conforto.
 
 - [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
