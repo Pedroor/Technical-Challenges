@@ -137,6 +137,7 @@ No projeto também utilizei alguns patterns como:
 
   # Entrar no diretório:
   $ cd Technical-Challenges/Nome do Projeto desejado
+  ```
 
 # :thought_balloon: Inspiração
 Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
