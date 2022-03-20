@@ -6,14 +6,21 @@ export const Card = styled.View`
   width: 90%;
   height: ${s(240)};
 
+  flex-direction: row;
+
   border-radius: ${s(40)};
-  margin-bottom: ${ms(30)};
+  margin-bottom: ${ms(10)};
   margin-left: ${ms(10)};
 `;
 
 export const CardContent = styled.View`
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+
+  margin-top: 10%;
+
+  justify-content: center;
+  align-items: center;
 `;
 
 export const TitleName = styled.Text`

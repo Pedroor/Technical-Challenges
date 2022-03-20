@@ -4,13 +4,11 @@ import api from '../../services/api';
 import { MoviesApiResponse } from './types';
 
 export async function fetchMoviesByName(ctx: QueryFunctionContext<string[]>) {
-  console.log('CTX', ctx);
   const [id, page] = ctx.queryKey;
-  console.log('page', ctx);
+
   const { data } = await api.get<MoviesApiResponse>(
     `/?apikey=${API_KEY}&s=${id}&page=${page}`,
   );
-  console.log('xABA', data);
 
   return data;
 }

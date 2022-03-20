@@ -1,10 +1,17 @@
 import React from 'react';
-import { View } from 'react-native';
+import { TouchableOpacityProps } from 'react-native';
+import { Button as ButtonComponent, ButtonTitle } from './styles';
+interface ButtonProps extends TouchableOpacityProps {
+  title: string;
+  isRemoved: false;
+}
 
-// import { Container } from './styles';
-
-const Button: React.FC = () => {
-  return <View />;
+const Button: React.FC<ButtonProps> = ({ isRemoved, title, ...rest }) => {
+  return (
+    <ButtonComponent isRemoved={isRemoved} {...rest}>
+      <ButtonTitle>{title}</ButtonTitle>
+    </ButtonComponent>
+  );
 };
 
 export default Button;

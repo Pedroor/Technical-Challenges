@@ -1,4 +1,5 @@
 import create from 'zustand';
+import AsyncStorage from '@react-native-community/async-storage';
 import { Movies } from '../hooks/useMoviesQuery/types';
 import { persist } from 'zustand/middleware';
 
@@ -14,15 +15,17 @@ export const useFavoriteMovies = create<State>(
         favoritesMovies: [],
         favoritateMovie: (movie: Movies) => {
           const favorites = get().favoritesMovies;
-          const shouldFavorite = !favorites.includes(movie.imdbID);
-
-          if (shouldFavorite) {
+          const shouldFavorite = favorites?.find(
+            selectedMovie => selectedMovie.imdbID === movie.imdbID,
+          );
+          console.log('SHOLD FAVORITE', shouldFavorite);
+          if (!shouldFavorite) {
             useFavoriteMovies.setState({
               favoritesMovies: [...favorites, movie],
             });
           } else {
             useFavoriteMovies.setState({
-              favoritesMovies: favorites.filter(
+              favoritesMovies: favorites?.filter(
                 selectedMovie => selectedMovie.imdbID !== movie.imdbID,
               ),
             });
@@ -30,7 +33,8 @@ export const useFavoriteMovies = create<State>(
         },
       } as State),
     {
-      name: 'FavoriteMovies',
+      name: 'FavoritesMovies',
+      getStorage: () => AsyncStorage,
     },
   ),
 );

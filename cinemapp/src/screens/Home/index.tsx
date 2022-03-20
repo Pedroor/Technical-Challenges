@@ -14,17 +14,11 @@ const Home: React.FC = () => {
   const [offSet, setOffSet] = useState(1);
   const flalistRef: React.RefObject<FlatList> = useRef(null);
   const [movieName] = useDebounce(inputValue.toLowerCase(), 500);
-  const { data, error, isLoading } = useMoviesQueryByName(
+
+  const { data, isLoading } = useMoviesQueryByName(
     movieName,
     offSet.toString(),
   );
-
-  console.log('DATA', error);
-  useEffect(() => {
-    console.log('IS LOADING', isLoading);
-    console.log('movieName', movieName);
-    console.log('inputValue', inputValue);
-  }, [isLoading, movieName, inputValue]);
 
   const renderMovieCard: ListRenderItem<Movies> = ({ item }) => {
     return <MovieCard item={item} />;
