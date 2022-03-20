@@ -5,16 +5,16 @@ import { MoviesApiResponse } from './types';
 
 export async function fetchMoviesByName(ctx: QueryFunctionContext<string[]>) {
   console.log('CTX', ctx);
-  const [id] = ctx.queryKey;
-  console.log('OLA MUNDO');
+  const [id, page] = ctx.queryKey;
+  console.log('page', ctx);
   const { data } = await api.get<MoviesApiResponse>(
-    `/?apikey=${API_KEY}&s=${id}`,
+    `/?apikey=${API_KEY}&s=${id}&page=${page}`,
   );
   console.log('xABA', data);
 
   return data;
 }
-export const useMoviesQueryByName = (id: string) =>
-  useQuery([id], fetchMoviesByName, {
+export const useMoviesQueryByName = (id: string, page: string) =>
+  useQuery([id, page], fetchMoviesByName, {
     staleTime: 60000 * 60 * 12,
   });
