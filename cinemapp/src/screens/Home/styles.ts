@@ -2,12 +2,14 @@ import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  padding-top: 80px;
+  padding-top: 40px;
+  background-color: #fff;
 `;
 
 export const InputContainer = styled.View`
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 `;
 
 export const InputArea = styled.View`
@@ -24,4 +26,14 @@ export const Input = styled.TextInput`
   ${({ theme }) => theme.textVariants.input};
   padding: 0 10px;
   width: 90%;
+`;
+
+export const Loading = styled.Image`
+  width: 360px;
+  height: 360px;
+`;
+
+export const LoadingContainer = styled.View`
+  justify-content: center;
+  align-items: center;
 `;
