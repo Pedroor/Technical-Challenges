@@ -14,6 +14,11 @@
 		6172F2D35A4C3AA820D92908 /* libPods-cinemapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-cinemapp.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-cinemapp-cinemappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-cinemapp-cinemappTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		226BAD9F3340495AB27BC6FE /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3808E151591C4C648C669FB3 /* Montserrat-Black.ttf */; };
+		6CA676FA9CCC4C77ABA09F0B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 793D05A771624859BBE263E6 /* Montserrat-Bold.ttf */; };
+		9C955FFEE72E4EBD958B9F2E /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7E45373798E41FD86221E05 /* Montserrat-ExtraBold.ttf */; };
+		72DB63305E70442CB38DF361 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7F35F8C74472B9CDD370 /* Montserrat-Regular.ttf */; };
+		53D18716C80D46BBB3B0FB4C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83EBB1A1E0C248A89E068569 /* Montserrat-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		C0A881CF5CF3F2B244570E2A /* Pods-cinemapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinemapp.debug.xcconfig"; path = "Target Support Files/Pods-cinemapp/Pods-cinemapp.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-cinemapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinemapp.release.xcconfig"; path = "Target Support Files/Pods-cinemapp/Pods-cinemapp.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		3808E151591C4C648C669FB3 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; name = "Montserrat-Black.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		793D05A771624859BBE263E6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F7E45373798E41FD86221E05 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-ExtraBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43BE7F35F8C74472B9CDD370 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83EBB1A1E0C248A89E068569 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				4E05F9BE38C24BEEA7BD800E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,9 +156,21 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-cinemapp-cinemappTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-cinemapp-cinemappTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		4E05F9BE38C24BEEA7BD800E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				3808E151591C4C648C669FB3 /* Montserrat-Black.ttf */,
+				793D05A771624859BBE263E6 /* Montserrat-Bold.ttf */,
+				F7E45373798E41FD86221E05 /* Montserrat-ExtraBold.ttf */,
+				43BE7F35F8C74472B9CDD370 /* Montserrat-Regular.ttf */,
+				83EBB1A1E0C248A89E068569 /* Montserrat-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +268,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				226BAD9F3340495AB27BC6FE /* Montserrat-Black.ttf in Resources */,
+				6CA676FA9CCC4C77ABA09F0B /* Montserrat-Bold.ttf in Resources */,
+				9C955FFEE72E4EBD958B9F2E /* Montserrat-ExtraBold.ttf in Resources */,
+				72DB63305E70442CB38DF361 /* Montserrat-Regular.ttf in Resources */,
+				53D18716C80D46BBB3B0FB4C /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +511,7 @@
 			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-cinemapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -509,6 +538,7 @@
 			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-cinemapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = cinemapp/Info.plist;

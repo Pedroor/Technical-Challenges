@@ -1,6 +1,6 @@
 import create from 'zustand';
-import {Movies} from '../hooks/useMoviesQuery/types';
-import {persist} from 'zustand/middleware';
+import { Movies } from '../hooks/useMoviesQuery/types';
+import { persist } from 'zustand/middleware';
 
 type State = {
   favoritesMovies: Movies[];
