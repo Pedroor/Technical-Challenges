@@ -1,6 +1,10 @@
 import styled from 'styled-components/native';
 import { s, ms } from 'react-native-size-matters';
 
+type TitleProps = {
+  color: boolean;
+};
+
 export const Container = styled.View``;
 export const Card = styled.View`
   width: 90%;
@@ -23,8 +27,10 @@ export const CardContent = styled.View`
   align-items: center;
 `;
 
-export const TitleName = styled.Text`
+export const TitleName = styled.Text<TitleProps>`
   ${({ theme }) => theme.textVariants.body1};
+  color: ${props =>
+    props.color ? props.theme.colors.blue : props.theme.colors.black}
   text-align: center;
   padding: 20px 10px 10px 10px;
   font-weight: bold;

@@ -1,15 +1,18 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 
 import { useDebounce } from 'use-debounce/lib';
 import { useMoviesQueryByName } from '../../hooks/useMoviesQuery';
-import { MovieCard, Paginate } from '../../components';
+import { MovieCard, Paginate, Button } from '../../components';
 import LoadingGif from '../../assets/loading.gif';
+import MovieLogo from '../../assets/movieLogo.jpeg';
 
 import * as S from './styles';
 import { FlatList, ListRenderItem } from 'react-native';
 import { Movies } from '../../hooks/useMoviesQuery/types';
+import { useNavigation } from '@react-navigation/core';
 
 const Home: React.FC = () => {
+  const navigation = useNavigation();
   const [inputValue, setInputValue] = useState('');
   const [offSet, setOffSet] = useState(1);
   const flalistRef: React.RefObject<FlatList> = useRef(null);
@@ -30,14 +33,16 @@ const Home: React.FC = () => {
 
   return (
     <S.Container>
+      <S.Logo source={MovieLogo} />
       <S.InputContainer>
         <S.InputArea>
           {/* <Search name="search" size={18} color="#919191" /> */}
 
           <S.Input
+            placeholderTextColor={'#000'}
             value={inputValue}
             onChangeText={value => setInputValue(value)}
-            placeholder="Busque por um Filme..."
+            placeholder="Search a Movie..."
           />
           {/* <Trash
             name="trash-o"
@@ -48,6 +53,10 @@ const Home: React.FC = () => {
           /> */}
         </S.InputArea>
       </S.InputContainer>
+      <Button
+        title={'Show Favorites'}
+        onPress={() => navigation.navigate('FavoriteList')}
+      />
 
       {isLoading ? (
         <S.LoadingContainer>
@@ -61,12 +70,14 @@ const Home: React.FC = () => {
           ref={flalistRef}
           style={{ marginTop: 20 }}
           ListFooterComponent={() => {
-            return (
+            return data?.Search ? (
               <Paginate
                 offSet={offSet}
                 flatListRef={flalistRef}
                 updateOffSet={handleUpdateOffSet}
               />
+            ) : (
+              <S.Container />
             );
           }}
         />

@@ -10,6 +10,8 @@ export const InputContainer = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  margin-top: 15px;
 `;
 
 export const InputArea = styled.View`
@@ -36,4 +38,11 @@ export const Loading = styled.Image`
 export const LoadingContainer = styled.View`
   justify-content: center;
   align-items: center;
+`;
+
+export const Logo = styled.Image`
+  width: 120px;
+  height: 120px;
+  margin-top: 40px;
+  align-self: center;
 `;

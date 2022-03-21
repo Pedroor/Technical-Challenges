@@ -6,9 +6,10 @@ type ButtonProps = {
 
 export const Button = styled.TouchableOpacity<ButtonProps>`
   width: 90%;
-  height: 60px;
+  height: 50px;
   align-items: center;
   justify-content: center;
+  align-self: center;
 
   margin-top: 15px;
   margin-bottom: 15px;

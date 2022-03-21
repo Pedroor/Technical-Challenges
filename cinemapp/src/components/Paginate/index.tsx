@@ -13,7 +13,7 @@ const Paginate: React.FC<PaginateProps> = ({
       updateOffSet(offSet + 1);
       flatListRef.current?.scrollToOffset({ animated: true, offset: 0 });
     } else {
-      if (offSet === 0) {
+      if (offSet === 1) {
         return;
       } else {
         updateOffSet(offSet - 1);
@@ -24,7 +24,9 @@ const Paginate: React.FC<PaginateProps> = ({
   return (
     <S.Container>
       <S.ButtonContainer>
-        <S.PaginateButton onPress={() => handleChangePage(false)}>
+        <S.PaginateButton
+          onPress={() => handleChangePage(false)}
+          disabled={offSet === 1}>
           <S.PaginateLabel>Previous Page</S.PaginateLabel>
         </S.PaginateButton>
       </S.ButtonContainer>

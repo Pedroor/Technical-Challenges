@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import * as S from './styles';
 import { MovieCardProps } from './types';
@@ -6,14 +6,13 @@ import { Button } from '../../components';
 import { useFavoriteMovies } from '../../store/useFavoriteMovies';
 
 const MovieCard: React.FC<MovieCardProps> = ({ item }) => {
-  //   const [isColorStar, setIsColorStar] = useState(false);
   const { favoritesMovies, favoritateMovie } = useFavoriteMovies();
 
-  console.log('FAVORITOS', favoritesMovies);
   return (
     <S.Container>
       <S.TitleContainer>
-        <S.TitleName>
+        <S.TitleName
+          color={favoritesMovies.find(movie => movie.imdbID === item.imdbID)}>
           {item.Title.length > 60
             ? `${item.Title.substring(0, 60)}...`
             : item.Title}
@@ -25,13 +24,13 @@ const MovieCard: React.FC<MovieCardProps> = ({ item }) => {
           {favoritesMovies.find(movie => movie.imdbID === item.imdbID) ? (
             <Button
               isRemoved={true}
-              title="Remover dos Favoritos"
+              title="Remove to Favorites"
               onPress={() => favoritateMovie(item)}
             />
           ) : (
             <Button
               isRemoved={false}
-              title="Adicionar aos Favoritos"
+              title="Add To Favorites"
               onPress={() => favoritateMovie(item)}
             />
           )}
