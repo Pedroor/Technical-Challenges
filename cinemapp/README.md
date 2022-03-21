@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Pokemon" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
+  <img alt="Joker" src="https://c.tenor.com/sqwr0sIibDIAAAAM/joker-movie-joker.gif" width="250px" />
 </h1>
 
 
@@ -14,18 +14,20 @@
 </p>
 
 <h1 align="center">
- <img alt="Home" src="https://i.imgur.com/WrfJrT8.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/jo6FzkI.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/wHM7Xv0.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/zzekaUW.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/mql0Qn5.png" width="400" />
+
 
 </h1>
 
 ## :page_with_curl: Sobre
-Este repositório contém uma pouco da história do universo Pokemon.
+Este repositório contém um desafio sobre desenvolvimento mobile com React-Native.
 
-Pokedex é uma aplicação no qual o usuário pode visualizar uma listagem de Pokemons, buscar e ver os detalhes de um pokemon específico, etc... Para obter os dados dos Pokemons foi utilizada a [PokeApi](https://pokeapi.co/).
+Na aplicação o usuário pode buscar e visualizar um filme ou mais filmes, como também criar uma lista com seus filmes favoritos apagar e excluir para facilitar o trabalho foi utilizada a  [omdApi](http://www.omdbapi.com/).
 
-O objetivo principal desse projeto foi colocar meus conhecimentos em React-Native na prática com uma quantidade expressiva de dados sem perca de performance por isso dou todos os meus créditos aos criadores do React-Query (https://react-query.tanstack.com/).
+O objetivo principal desse projeto foi colocar meus conhecimentos em React-Native na prática. Meu principal foco foi lógica de programação, criação de uma aplicação bem modularizada,escalável e de fácil manutenção utilizando desde de ferramentas mais consolidadas a ferramentas hypadas e ainda pouco conhecidas dentro da comunidade, criação de componentes reutilizáveis e acima de tudo performance! Daria para melhorar e muito a User Experience da aplicação porém o foco foi o que citei acima.
+
+Gostaria de hypar um pouco o Zustand pois com apenas 40 linhas de código consegui criar um boilerplate de state management persistindo os dados no Async Storage, achei isso muito massa!
 
 ## :hammer: Tecnologias
 
@@ -35,6 +37,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React Query](https://react-query.tanstack.com/)
+- [Zustand](https://github.com/pmndrs/zustand)
 - [React Navigation](https://reactnavigation.org/)
 - [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
 - [Axios](https://github.com/axios/axios)
@@ -51,13 +54,16 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ## :rocket: Começando
 ``` bash
   # Clonar o projeto:
-  $ https://github.com/Pedroor/Pokedex.git
+  $ https://github.com/Pedroor/dev-cinemapp
 
   # Entrar no diretório:
-  $ cd Pokedex
+  $ cd cinemapp
   
   # Instalar as dependências:
   $ yarn
+  
+  # Caso esteja usando IOS
+  $ pod install
 ```
 
 ## :iphone: Iniciando mobile
@@ -68,11 +74,9 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
   $ react-native start
 
   # No segundo console:
-  $ react-native run-android
+  $ yarn android ou yarn ios
 ```
 
-# :thought_balloon: Inspiração
-- Design inspirado pela (https://dribbble.com/shots/14241781-Pok-dex) feita por [Bruna Campos](https://dribbble.com/brucampos).
-- Não consegui replicar 100% o layout devido ao tempo e devido a manipulação de alguns dados da PokeApi entretanto foi uma ótima inspiração.
+# :thought_balloon: Créditos
 
 Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
