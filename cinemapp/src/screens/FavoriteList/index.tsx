@@ -4,7 +4,8 @@ import { FlatList, ListRenderItem } from 'react-native';
 import { useNavigation } from '@react-navigation/core';
 import { Movies } from '../../hooks/useMoviesQuery/types';
 import { useFavoriteMovies } from '../../store/useFavoriteMovies';
-import { MovieCard } from '../../components';
+import { MovieCard, ResponseGif } from '../../components';
+import { GIFS } from '../../constants';
 import MovieLogo from '../../assets/movieLogo.jpeg';
 import * as S from './styles';
 
@@ -24,6 +25,12 @@ const FavoriteList: React.FC = () => {
         color="#000"
         onPress={() => navigation.goBack()}
       />
+      {!favoritesMovies.length && (
+        <ResponseGif
+          gif={GIFS.notFoundList.gif}
+          title={GIFS.notFoundList.title}
+        />
+      )}
       <FlatList
         data={favoritesMovies}
         renderItem={renderMovieCard}

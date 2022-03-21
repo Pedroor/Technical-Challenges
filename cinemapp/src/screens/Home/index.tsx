@@ -1,15 +1,14 @@
 import React, { useCallback, useRef, useState } from 'react';
-
-import { useDebounce } from 'use-debounce/lib';
-import { useMoviesQueryByName } from '../../hooks/useMoviesQuery';
-import { MovieCard, Paginate, Button } from '../../components';
-import LoadingGif from '../../assets/loading.gif';
-import MovieLogo from '../../assets/movieLogo.jpeg';
-
-import * as S from './styles';
 import { FlatList, ListRenderItem } from 'react-native';
 import { Movies } from '../../hooks/useMoviesQuery/types';
 import { useNavigation } from '@react-navigation/core';
+import { useDebounce } from 'use-debounce/lib';
+import { useMoviesQueryByName } from '../../hooks/useMoviesQuery';
+import { MovieCard, Paginate, Button, ResponseGif } from '../../components';
+import { GIFS } from '../../constants';
+
+import MovieLogo from '../../assets/movieLogo.jpeg';
+import * as S from './styles';
 
 const Home: React.FC = () => {
   const navigation = useNavigation();
@@ -36,32 +35,24 @@ const Home: React.FC = () => {
       <S.Logo source={MovieLogo} />
       <S.InputContainer>
         <S.InputArea>
-          {/* <Search name="search" size={18} color="#919191" /> */}
-
           <S.Input
             placeholderTextColor={'#000'}
             value={inputValue}
             onChangeText={value => setInputValue(value)}
             placeholder="Search a Movie..."
           />
-          {/* <Trash
-            name="trash-o"
-            onPress={() => setInputValue('')}
-            size={24}
-            color="#f2231f"
-            style={{ paddingRight: 10 }}
-          /> */}
         </S.InputArea>
       </S.InputContainer>
       <Button
         title={'Show Favorites'}
         onPress={() => navigation.navigate('FavoriteList')}
       />
+      {!data?.Search && !isLoading && (
+        <ResponseGif gif={GIFS.notFound.gif} title={GIFS.notFound.title} />
+      )}
 
       {isLoading ? (
-        <S.LoadingContainer>
-          <S.Loading source={LoadingGif} />
-        </S.LoadingContainer>
+        <ResponseGif gif={GIFS.loading.gif} title={GIFS.loading.title} />
       ) : (
         <FlatList
           data={data?.Search}
