@@ -1,50 +1,107 @@
-<h1 align="center">
-  <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
+<h1 align="center">..
+  <img alt="Wheater" src="https://media.giphy.com/media/AeHLxU7TZXCPS/giphy.gif" width="400px" />
 </h1>
 
 <p align="center">
   <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hammer-iniciando-mobile">Tecnologias</a>
-  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#books-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-começando">Começando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#thought_balloon-começando">Inspiração</a>
+  <a href="#hammer">Projetos</a>
+  &nbsp;&nbsp;&nbsp;
+ 
 </p>
-
-<h1 align="center">
- <img alt="Home" src="https://i.imgur.com/WrfJrT8.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/jo6FzkI.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/wHM7Xv0.png" width="400" />
-
-</h1>
 
 ## :page_with_curl: Sobre
 
-Este repositório contém uma pouco da história do universo Pokemon.
+Este repositório contém os desafios técnicos que tive que desenvolver ao longo de alguns processos seletivos que participei durante minha jornada como desenvolvedor, cada pasta neste repositório é referente a um desafio específico onde há uma explicação do projeto, tecnologias utilizadas é como executar localmente.
 
-Pokedex é uma aplicação no qual o usuário pode visualizar uma listagem de Pokemons, buscar e ver os detalhes de um pokemon específico, etc... Para obter os dados dos Pokemons foi utilizada a [PokeApi](https://pokeapi.co/).
+PS: Cada repositório possui um arquivo README específico explicando mais detalhadamente o que faz a aplicação.
 
-O objetivo principal desse projeto foi colocar meus conhecimentos em React-Native na prática com uma quantidade expressiva de dados sem perca de performance por isso dou todos os meus créditos aos criadores do React-Query (https://react-query.tanstack.com/).
+<h1 align="center">
+  <img alt="Pokemon" src="https://media.giphy.com/media/3ohs7RkcDquVXo5uSY/giphy.gif" width="450px" />
+</h1>
+
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/81y6vbJ.png" width="300" />
+ <img alt="Home" src="https://i.imgur.com/EJy7zNr.png" width="300" />
+ <img alt="Home" src="https://i.imgur.com/ESus6qP.png" width="300" />
+  <img alt="Home" src="https://i.imgur.com/FNIihv2.png" width="300" />
+
+</h1>
 
 ## :hammer: Tecnologias
-
-Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [React Query](https://react-query.tanstack.com/)
 - [React Navigation](https://reactnavigation.org/)
 - [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
 - [Axios](https://github.com/axios/axios)
 - [Styled Components](https://styled-components.com/)
 - [React-Native-Vector-Icons](https://github.com/oblador/react-native-vector-icons)
+- [Redux](https://redux.js.org/)
+- [Reudx-Persist](https://github.com/rt2zz/redux-persist)
+- [Redux-Sagas](https://redux-saga.js.org/)
 - [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
+- [Testing-Library + Jest](https://callstack.github.io/react-native-testing-library/docs/getting-started/)
+
+No projeto também utilizei alguns patterns como:
+
+- [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
+- [DUCKS](https://blog.rocketseat.com.br/estrutura-redux-escalavel-com-ducks/)
+
+<h1 align="center">
+  <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
+</h1>
+
+## :hammer: Tecnologias
+
+- [React-Native CLI](https://reactnative.dev/docs/environment-setup)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [React Query](https://react-query.tanstack.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/WrfJrT8.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/jo6FzkI.png" width="400" />
+  </h1>
+  
+  <h1 align="center">
+  <img alt="Wheater" src="https://media.giphy.com/media/TVpeXDi8xTlyo/giphy.gif" width="250px" />
+</h1>
+  
+##  :hammer: Tecnologias
+- [Expo](https://expo.io/)
+- [GraphQL](https://graphql.org/)
+- [ApolloClient](https://www.apollographql.com/docs/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
+
+</h1>
+
+<h1 align="center">
+  <img alt="Marvel" src="https://wallpaperaccess.com/full/342092.jpg" width="250px" />
+</h1>
+
+## :hammer: Tecnologias
+
+- [Expo](https://expo.io/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [React Query](https://react-query.tanstack.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://media.tenor.com/images/b705d5681438f3ef56611f87fa707704/tenor.gif" width="400" />
+
+</h1>
 
 ## :books: Requisitos
 
 - Ter [**Git**](https://git-scm.com/) para clonar o projeto.
-- - Ter [**React-Native**](https://reactnative.dev/docs/environment-setup) configurado para executar o projeto.
 - Ter [**Node.js**](https://nodejs.org/en/) instalado.
 - Um dispositivo ou emulador iOS ou Android
 
@@ -52,30 +109,12 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ```bash
   # Clonar o projeto:
-  $ https://github.com/Pedroor/Pokedex.git
+  $ https://github.com/Pedroor/Technical-Challenges.git
 
   # Entrar no diretório:
-  $ cd Pokedex
-
-  # Instalar as dependências:
-  $ yarn
-```
-
-## :iphone: Iniciando mobile
-
-```bash
-  # No mesmo diretorio abrir 2 consoles no terminal:
-  # No primeiro console:
-
-  $ react-native start
-
-  # No segundo console:
-  $ react-native run-android
+  $ cd Technical-Challenges/Nome do Projeto desejado
 ```
 
 # :thought_balloon: Inspiração
-
-- Design inspirado pela (https://dribbble.com/shots/14241781-Pok-dex) feita por [Bruna Campos](https://dribbble.com/brucampos).
-- Não consegui replicar 100% o layout devido ao tempo e devido a manipulação de alguns dados da PokeApi entretanto foi uma ótima inspiração.
 
 Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
