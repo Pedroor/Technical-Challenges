@@ -2,6 +2,8 @@
   <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
 </h1>
 
+
+
 <p align="center">
   <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#hammer-iniciando-mobile">Tecnologias</a>
@@ -19,7 +21,6 @@
 </h1>
 
 ## :page_with_curl: Sobre
-
 Este repositório contém uma pouco da história do universo Pokemon.
 
 Pokedex é uma aplicação no qual o usuário pode visualizar uma listagem de Pokemons, buscar e ver os detalhes de um pokemon específico, etc... Para obter os dados dos Pokemons foi utilizada a [PokeApi](https://pokeapi.co/).
@@ -42,31 +43,28 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
 
 ## :books: Requisitos
-
 - Ter [**Git**](https://git-scm.com/) para clonar o projeto.
 - - Ter [**React-Native**](https://reactnative.dev/docs/environment-setup) configurado para executar o projeto.
 - Ter [**Node.js**](https://nodejs.org/en/) instalado.
 - Um dispositivo ou emulador iOS ou Android
 
 ## :rocket: Começando
-
-```bash
+``` bash
   # Clonar o projeto:
   $ https://github.com/Pedroor/Pokedex.git
 
   # Entrar no diretório:
   $ cd Pokedex
-
+  
   # Instalar as dependências:
   $ yarn
 ```
 
 ## :iphone: Iniciando mobile
-
 ```bash
   # No mesmo diretorio abrir 2 consoles no terminal:
   # No primeiro console:
-
+   
   $ react-native start
 
   # No segundo console:
@@ -74,7 +72,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ```
 
 # :thought_balloon: Inspiração
-
 - Design inspirado pela (https://dribbble.com/shots/14241781-Pok-dex) feita por [Bruna Campos](https://dribbble.com/brucampos).
 - Não consegui replicar 100% o layout devido ao tempo e devido a manipulação de alguns dados da PokeApi entretanto foi uma ótima inspiração.
 
