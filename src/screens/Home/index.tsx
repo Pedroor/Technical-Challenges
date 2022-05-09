@@ -1,7 +1,7 @@
 import React from "react";
 import { useReduxSelector, useReduxDispatch } from "../../hooks";
 import { useNavigation } from "@react-navigation/core";
-import { getWeather } from "../../redux/thunk/geolocation";
+import { getWeather } from "../../redux/thunk/getWeather";
 import Button from "../../components/Button";
 import { Title, Box } from "../../atomic/atoms";
 
