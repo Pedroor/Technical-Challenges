@@ -9,5 +9,5 @@ export const store = configureStore({
   reducer: {
     geolocation: geolocationReducer,
   },
-  enhancers: [applyMiddleware(thunk), Reactotron.createEnhancer()],
+  enhancers: [applyMiddleware(thunk), Reactotron.createEnhancer!()],
 });

@@ -1,9 +1,10 @@
 import { store } from "../store";
+import { Dispatch } from "redux";
 import { actions as geolocationActions } from "../store/slices/geolocation";
-import api from "../../../services/api";
+import api from "../../services/api";
 
 export function getWeather() {
-  return async function middle(dispatch) {
+  return async function middle(dispatch: Dispatch) {
     try {
       const {
         geolocation: { latitude, longitude },
@@ -15,9 +16,10 @@ export function getWeather() {
       );
       if (response)
         dispatch(geolocationActions.requestWeatherSuccess(response.data));
-    } catch (error) {
-      console.log(error);
-      dispatch(geolocationActions.requestWeatherFailed(error.message));
+    } catch (_e) {
+      let e: Error = _e;
+      console.log(e);
+      dispatch(geolocationActions.requestWeatherFailed(e.message));
     }
   };
 }

@@ -1,4 +1,4 @@
-import { store } from "../slices/geolocation";
+import { store } from "..";
 
 export type ReduxStore = ReturnType<typeof store.getState>;
 
