@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
-import { useNavigation } from "@react-navigation/core";
-import { Alert, Platform, PermissionsAndroid } from "react-native";
-import { Title } from "../../atomic/atoms";
-import Geolocation from "@react-native-community/geolocation";
+import React, { useCallback, useEffect } from "react";
 
+import { useNavigation } from "@react-navigation/core";
+import { Title } from "../../atomic/atoms";
+import { RequestPermissions, LocalizationService } from "../../utils";
 import { actions as geolocationActions } from "../../redux/store/slices/geolocation";
 import { useReduxDispatch, useReduxSelector } from "../../hooks";
-import { getWeather } from "../../redux/thunk/geolocation";
+import { getWeather } from "../../redux/thunk/getWeather";
 
 import Loading from "../../components/Loading";
 import Button from "../../components/Button";
@@ -19,22 +18,14 @@ function Initial() {
   const { loading } = useReduxSelector((state) => state.geolocation);
   const { navigate } = useNavigation();
 
-  const getUserLocation = () => {
-    Geolocation.getCurrentPosition(
-      async ({ coords: { latitude, longitude } }) => {
-        dispatch(geolocationActions.getLocation({ latitude, longitude }));
-      },
-      (error) => {
-        Alert.alert("Ops", "Falha ao obter a localização");
-      },
-      { enableHighAccuracy: true, timeout: 1500, maximumAge: 20000 }
-    );
-  };
-
   useEffect(() => {
-    if (Platform.OS === "ios") Geolocation.requestAuthorization();
+    RequestPermissions();
+    async () => await handleFetchLocation();
+  });
 
-    getUserLocation();
+  const handleFetchLocation = useCallback(async () => {
+    const position = await LocalizationService.getCurrentPosition();
+    dispatch(geolocationActions.setLocation(position));
   }, []);
 
   const handleClickSingInButton = async () => {

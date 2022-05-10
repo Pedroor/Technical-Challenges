@@ -13,7 +13,6 @@ function Home() {
   const dispatch = useReduxDispatch();
   const { goBack } = useNavigation();
   const {
-    weather,
     sys: { country },
     main,
     name,
@@ -34,7 +33,6 @@ function Home() {
           text-align="center"
           color={theme.default.colors.purple400}
           fontWeight="bold"
-          mr={28}
         >
           Weather Forecast
         </Title>
@@ -61,7 +59,8 @@ function Home() {
         <Box justify="space-around" marginT={30} marginL={30}>
           <Title
             mr={25}
-            fontSize={54}
+            pt={20}
+            fontSize={44}
             color={theme.default.colors.white}
             fontWeight="bold"
           >
@@ -78,7 +77,7 @@ function Home() {
             fontSize={22}
             color={theme.default.colors.white}
           >
-            {name} , {country}
+            {name} {country && `, ${country}`}
           </Title>
         </Box>
       </Box>

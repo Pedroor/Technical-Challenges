@@ -45,20 +45,19 @@ export const initialState = {
   errorMessage: "",
 };
 
-const getLocation = (
+const setLocation = (
   state: State,
   action: PayloadAction<GetLocationPayload>
 ) => ({
   ...state,
-  latitude: action.payload.latitude,
-  longitude: action.payload.longitude,
+  latitude: action?.payload?.latitude,
+  longitude: action?.payload?.longitude,
 });
 
 const requestWeather = (state: State) => ({
   ...state,
   loading: true,
   error: false,
-  errorMessage: "",
 });
 
 const requestWeatherSuccess = (
@@ -82,7 +81,7 @@ const geolocationSlice = createSlice({
   name: "@geolocation",
   initialState,
   reducers: {
-    getLocation,
+    setLocation,
     requestWeather,
     requestWeatherSuccess,
     requestWeatherFailed,
