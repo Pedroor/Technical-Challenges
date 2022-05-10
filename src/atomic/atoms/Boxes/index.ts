@@ -3,6 +3,7 @@ import normalize from "react-native-normalize";
 import { StyledProps } from "styled-components";
 
 type BoxProps = StyledProps<{
+  flex?: number;
   position?: string;
   direction?: string;
   justify?: string;

@@ -2,8 +2,9 @@ import React from "react";
 import { useReduxSelector, useReduxDispatch } from "../../hooks";
 import { useNavigation } from "@react-navigation/core";
 import { getWeather } from "../../redux/thunk/getWeather";
-import Button from "../../components/Button";
+import { formatTemperature } from "../../utils";
 import { Title, Box } from "../../atomic/atoms";
+import Button from "../../components/Button";
 
 import * as S from "./styles";
 import * as theme from "../../styles/theme";
@@ -64,7 +65,7 @@ function Home() {
             color={theme.default.colors.white}
             fontWeight="bold"
           >
-            {main.temp} º
+            {formatTemperature({ temperature: main.temp })}
           </Title>
 
           <S.Logo source={Icons.sun} />

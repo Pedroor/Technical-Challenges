@@ -1,5 +1,6 @@
 import { Dispatch } from "redux";
 import { actions as geolocationActions } from "../store/slices/geolocation";
+import { OPEN_WEATHER_API_KEY } from "@env";
 import { LocalizationService } from "../../utils";
 import api from "../../services/api";
 
@@ -10,11 +11,17 @@ export function getWeather() {
       const { latitude, longitude } =
         await LocalizationService.getCurrentPosition();
 
-      const response = await api.get(
-        `/weather?lat=${latitude}&lon=${longitude}&appid=69e8e056ba6961ac370664ab3345f166&units=metric`
-      );
+      const response = await api.get(`/weather`, {
+        params: {
+          lat: latitude,
+          lon: longitude,
+          units: "metric",
+        },
+      });
       if (response)
         dispatch(geolocationActions.requestWeatherSuccess(response.data));
-    } catch (_e) {}
+    } catch (_e) {
+      throw Error;
+    }
   };
 }

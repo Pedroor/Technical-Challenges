@@ -13,10 +13,16 @@ import java.util.ArrayList;
 
 // @react-native-community/geolocation
 import com.reactnativecommunity.geolocation.GeolocationPackage;
+// react-native-config
+import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
 // react-native-get-location
 import com.github.douglasjunior.reactNativeGetLocation.ReactNativeGetLocationPackage;
+// react-native-permissions
+import com.zoontek.rnpermissions.RNPermissionsPackage;
+// react-native-reanimated
+import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
@@ -67,8 +73,11 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new GeolocationPackage(),
+      new ReactNativeConfigPackage(),
       new RNGestureHandlerPackage(),
       new ReactNativeGetLocationPackage(),
+      new RNPermissionsPackage(),
+      new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage()
     ));

@@ -1,9 +1,9 @@
 import thunk from "redux-thunk";
 import { configureStore } from "@reduxjs/toolkit";
-import { applyMiddleware, compose, createStore } from "redux";
+import { applyMiddleware } from "redux";
 import { geolocationReducer } from "./slices/geolocation";
 
-import Reactotron from "../../config/reactotron";
+import Reactotron from "../../config/ReactotronConfig";
 
 export const store = configureStore({
   reducer: {

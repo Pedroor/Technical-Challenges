@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect } from "react";
-
+import React, { useEffect } from "react";
+import { Alert } from "react-native";
 import { useNavigation } from "@react-navigation/core";
 import { Title } from "../../atomic/atoms";
-import { RequestPermissions, LocalizationService } from "../../utils";
-import { actions as geolocationActions } from "../../redux/store/slices/geolocation";
+import { RequestPermissions } from "../../utils";
+import { useFetchLocation } from "../../hooks/useFetchLocation";
 import { useReduxDispatch, useReduxSelector } from "../../hooks";
 import { getWeather } from "../../redux/thunk/getWeather";
 
@@ -15,6 +15,7 @@ import * as Icons from "../../assets";
 
 function Initial() {
   const dispatch = useReduxDispatch();
+  const { handleFetchLocation, statusLocation } = useFetchLocation();
   const { loading } = useReduxSelector((state) => state.geolocation);
   const { navigate } = useNavigation();
 
@@ -23,14 +24,16 @@ function Initial() {
     async () => await handleFetchLocation();
   });
 
-  const handleFetchLocation = useCallback(async () => {
-    const position = await LocalizationService.getCurrentPosition();
-    dispatch(geolocationActions.setLocation(position));
-  }, []);
-
   const handleClickSingInButton = async () => {
-    await dispatch(getWeather());
-    navigate("Home");
+    if (statusLocation === "denied") {
+      Alert.alert(
+        "Weather Forecast",
+        "You need enabled location in this application!"
+      );
+    } else {
+      await dispatch(getWeather());
+      navigate("Home");
+    }
   };
 
   if (loading) return <Loading />;
