@@ -104,6 +104,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RNPermissions.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RNReanimated.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RNScreens.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -220,6 +230,11 @@
 			<false/>
 		</dict>
 		<key>ReactCommon.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactNativeGetLocation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
