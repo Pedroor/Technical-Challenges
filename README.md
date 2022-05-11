@@ -15,38 +15,6 @@ Este repositório contém os desafios técnicos que tive que desenvolver ao long
 
 PS: Cada repositório possui um arquivo README específico explicando mais detalhadamente o que faz a aplicação.
 
-<h1 align="center">
-  <img alt="Pokemon" src="https://media.giphy.com/media/3ohs7RkcDquVXo5uSY/giphy.gif" width="450px" />
-</h1>
-
-<h1 align="center">
- <img alt="Home" src="https://i.imgur.com/81y6vbJ.png" width="300" />
- <img alt="Home" src="https://i.imgur.com/EJy7zNr.png" width="300" />
- <img alt="Home" src="https://i.imgur.com/ESus6qP.png" width="300" />
-  <img alt="Home" src="https://i.imgur.com/FNIihv2.png" width="300" />
-
-</h1>
-
-## :hammer: Tecnologias
-
-- [React-Native CLI](https://reactnative.dev/docs/environment-setup)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [React Navigation](https://reactnavigation.org/)
-- [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
-- [Axios](https://github.com/axios/axios)
-- [Styled Components](https://styled-components.com/)
-- [React-Native-Vector-Icons](https://github.com/oblador/react-native-vector-icons)
-- [Redux](https://redux.js.org/)
-- [Reudx-Persist](https://github.com/rt2zz/redux-persist)
-- [Redux-Sagas](https://redux-saga.js.org/)
-- [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
-- [Testing-Library + Jest](https://callstack.github.io/react-native-testing-library/docs/getting-started/)
-
-No projeto também utilizei alguns patterns como:
-
-- [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
-- [DUCKS](https://blog.rocketseat.com.br/estrutura-redux-escalavel-com-ducks/)
 
 <h1 align="center">
   <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
