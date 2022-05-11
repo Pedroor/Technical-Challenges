@@ -1,40 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface GetLocationPayload {
-  latitude: number;
-  longitude: number;
-}
-
-interface WeatherResponse {
-  main: {
-    temp: number;
-    feels_like: number;
-    temp_min: number;
-    temp_max: number;
-    pressure: number;
-    humidity: number;
-  };
-  sys: {
-    country: string;
-  };
-  name: string;
-  weather: [
-    {
-      id: number;
-      main: string;
-      description: string;
-      icon: string;
-    }
-  ];
-}
-interface State {
-  latitude: number;
-  longitude: number;
-  data: WeatherResponse;
-  loading: boolean;
-  error: boolean;
-  errorMessage: string;
-}
+import { State, GetLocationPayload, WeatherResponse } from "./types";
 
 export const initialState = {
   latitude: 0,
@@ -45,19 +10,20 @@ export const initialState = {
   errorMessage: "",
 };
 
-const setLocation = (
+const getLocation = (
   state: State,
   action: PayloadAction<GetLocationPayload>
 ) => ({
   ...state,
-  latitude: action?.payload?.latitude,
-  longitude: action?.payload?.longitude,
+  latitude: action.payload.latitude,
+  longitude: action.payload.longitude,
 });
 
 const requestWeather = (state: State) => ({
   ...state,
   loading: true,
   error: false,
+  errorMessage: "",
 });
 
 const requestWeatherSuccess = (
@@ -81,7 +47,7 @@ const geolocationSlice = createSlice({
   name: "@geolocation",
   initialState,
   reducers: {
-    setLocation,
+    getLocation,
     requestWeather,
     requestWeatherSuccess,
     requestWeatherFailed,

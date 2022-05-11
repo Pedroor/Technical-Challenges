@@ -4,8 +4,7 @@ import { useNavigation } from "@react-navigation/core";
 import { Title } from "../../atomic/atoms";
 import { RequestPermissions } from "../../utils";
 import { useFetchLocation } from "../../hooks/useFetchLocation";
-import { useReduxDispatch, useReduxSelector } from "../../hooks";
-import { getWeather } from "../../redux/thunk/getWeather";
+import { useReduxSelector } from "../../hooks";
 
 import Loading from "../../components/Loading";
 import Button from "../../components/Button";
@@ -14,8 +13,8 @@ import * as theme from "../../styles/theme";
 import * as Icons from "../../assets";
 
 function Initial() {
-  const dispatch = useReduxDispatch();
-  const { handleFetchLocation, statusLocation } = useFetchLocation();
+  const { handleFetchLocation, statusLocation, handleGetWeather } =
+    useFetchLocation();
   const { loading } = useReduxSelector((state) => state.geolocation);
   const { navigate } = useNavigation();
 
@@ -31,7 +30,7 @@ function Initial() {
         "You need enabled location in this application!"
       );
     } else {
-      await dispatch(getWeather());
+      await handleGetWeather();
       navigate("Home");
     }
   };

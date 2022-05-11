@@ -3,7 +3,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { applyMiddleware } from "redux";
 import { geolocationReducer } from "./slices/geolocation";
 
-import Reactotron from "../../config/ReactotronConfig";
+import Reactotron from "../../config/Reactotron.config";
 
 export const store = configureStore({
   reducer: {
