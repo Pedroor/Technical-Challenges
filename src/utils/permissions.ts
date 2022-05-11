@@ -22,15 +22,12 @@ async function RequestPermissions() {
       res = await request(PERMISSIONS.ANDROID.ACCESS_COARSE_LOCATION, {
         title: "Location Permission",
         message: "Allow Location Permission.",
-        //   buttonNeutral: "Ask Me Later",
-        //   buttonNegative: "Cancel",
         buttonPositive: "OK",
       });
 
       if (res !== RESULTS.DENIED) {
         res = await request(PERMISSIONS.ANDROID.ACCESS_COARSE_LOCATION);
       }
-      console.log("RES", res);
     }
 
     return res;
