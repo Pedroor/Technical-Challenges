@@ -1,3 +1,10 @@
+export interface State {
+  data: WeatherResponse;
+  loading: boolean;
+  error: boolean;
+  errorMessage: string;
+}
+
 export interface GetLocationPayload {
   latitude: number;
   longitude: number;
@@ -24,8 +31,4 @@ export interface WeatherResponse {
       icon: string;
     }
   ];
-}
-export interface State {
-  latitude: number;
-  longitude: number;
 }

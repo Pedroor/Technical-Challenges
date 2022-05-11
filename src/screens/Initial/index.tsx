@@ -15,7 +15,7 @@ import * as Icons from "../../assets";
 function Initial() {
   const { handleFetchLocation, statusLocation, handleGetWeather } =
     useFetchLocation();
-  const { loading } = useReduxSelector((state) => state.geolocation);
+  const { loading } = useReduxSelector((state) => state.weather);
   const { navigate } = useNavigation();
 
   useEffect(() => {

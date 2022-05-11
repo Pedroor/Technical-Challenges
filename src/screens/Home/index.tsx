@@ -17,8 +17,8 @@ function Home() {
     sys: { country },
     main,
     name,
-  } = useReduxSelector((state) => state.geolocation.data);
-  const { loading } = useReduxSelector((state) => state.geolocation);
+  } = useReduxSelector((state) => state.weather.data);
+  const { loading } = useReduxSelector((state) => state.weather);
 
   const handleCallRefresh = async () => await dispatch(getWeather());
 

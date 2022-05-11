@@ -22,7 +22,7 @@ export function useFetchLocation() {
   }, []);
 
   const handleGetWeather = useCallback(async () => {
-    await getWeather();
+    dispatch(getWeather());
   }, []);
 
   return { handleFetchLocation, statusLocation, handleGetWeather };
