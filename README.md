@@ -22,11 +22,11 @@
 </h1>
 
 ## :page_with_curl: Sobre
-Este repositório contém uma pouco da história do universo Pokemon.
+Este repositório coloca em prática alguns dos conhecimentos e tecnicas desenvolvidas ao longe do tempo na carreira com React-Native Developer. Alguns pontos explorados no projeto foram:
 
-Pokedex é uma aplicação no qual o usuário pode visualizar uma listagem de Pokemons, buscar e ver os detalhes de um pokemon específico, etc... Para obter os dados dos Pokemons foi utilizada a [PokeApi](https://pokeapi.co/).
-
-O objetivo principal desse projeto foi colocar meus conhecimentos em React-Native na prática com uma quantidade expressiva de dados sem perca de performance por isso dou todos os meus créditos aos criadores do React-Query (https://react-query.tanstack.com/).
+- Arquitetura
+- Boas práticas de programação
+- Layout
 
 ## :hammer: Tecnologias
 
@@ -35,12 +35,10 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [React Query](https://react-query.tanstack.com/)
+- [React-Toolkit](https://redux-toolkit.js.org/)
 - [React Navigation](https://reactnavigation.org/)
-- [React Native Gesture Handler](https://kmagiera.github.io/react-native-gesture-handler/)
 - [Axios](https://github.com/axios/axios)
 - [Styled Components](https://styled-components.com/)
-- [React-Native-Vector-Icons](https://github.com/oblador/react-native-vector-icons)
 - [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
 
 ## :books: Requisitos
@@ -49,19 +47,26 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - Ter [**Node.js**](https://nodejs.org/en/) instalado.
 - Um dispositivo ou emulador iOS ou Android
 
+
 ## :rocket: Começando
 ``` bash
   # Clonar o projeto:
-  $ https://github.com/Pedroor/Pokedex.git
+  $ https://github.com/Pedroor/Weather-Builders.git
 
   # Entrar no diretório:
-  $ cd Pokedex
+  $ cd Weather-Builders
   
   # Instalar as dependências:
   $ yarn
+  $ cd ios && pod install
 ```
 
-## :iphone: Iniciando mobile
+## :rocket: Configurando Env
+``` 
+  # Você vai precisar um arquivo .env e dentro dele colocar sua api-key de acordo com .env.example
+```
+
+## :iphone: Iniciando mobile Android
 ```bash
   # No mesmo diretorio abrir 2 consoles no terminal:
   # No primeiro console:
@@ -69,11 +74,28 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
   $ react-native start
 
   # No segundo console:
-  $ react-native run-android
+  $ yarn android
+```
+## :iphone: Iniciando mobile IOS
+```bash
+  # No mesmo diretorio abrir 2 consoles no terminal:
+  # No primeiro console:
+   
+  $ react-native start
+
+  # No segundo console:
+  $ yarn ios
 ```
 
-# :thought_balloon: Inspiração
-- Design inspirado pela (https://dribbble.com/shots/14241781-Pok-dex) feita por [Bruna Campos](https://dribbble.com/brucampos).
-- Não consegui replicar 100% o layout devido ao tempo e devido a manipulação de alguns dados da PokeApi entretanto foi uma ótima inspiração.
+# :thought_balloon: Considerações Técnicas
+
+- As tecnologias escolhidas para o projeto foram pensadas levando em consideração uma futura escalabilidade com foco em melhorar a manutenibilidade do código, por esse motivo o uso de Redux mesmo sem há necessidade de uso do mesmo.
+
+- Por conta do tempo acabei optando por um design bem minimalista.
+
+- Não consegui finalizar o suit de teste porém deixei o ambiente configurado
+
+- Havia a possibilidade de implementar algumas funcionalidades a mais porém acabei optando por fazer apenas o que foi solicitado, para qualquer outra dúvida sobre a utilização de uma determinada tecnologia ou padrão de código & afins, tenho um repositório onde há diversos pequenos projetos utilizando boa parte das ferramentas do ecossistema react como: Redux, Sagas, Duck Pattern, Redux-Toolkit, Zustand, Redux-Persist, GraphQL no link: 👋🏻 [Get in touch!](https://github.com/Pedroor/Technical-Challenges)
+
 
 Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
