@@ -5,10 +5,6 @@ export const Container = styled.SafeAreaView`
   background-color: ${(props) => props.theme.colors.blue800};
 `;
 
-export const Content = styled.View`
-  justify-content: center;
-  align-items: center;
-`;
 export const CardContainer = styled.View`
   margin: 15px 15px 15px 15px;
   height: 300px;

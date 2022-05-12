@@ -12,28 +12,4 @@ export default {
     blue600: "#1e1782",
     white: "#ffffff",
   },
-
-  fontFamily: {
-    regular: "Montserrat_Regular",
-    semiBold: "Montserrat-SemiBold",
-    bold: "Montserrat-Bold",
-  },
-
-  textVariants: {
-    bigTitle: {
-      fontSize: "20px",
-      fontFamily: "Montserrat-Bold",
-    },
-    title: {
-      fontSize: "16px",
-      fontFamily: "Montserrat-Bold",
-      lineHeight: "22px",
-    },
-
-    body: {
-      fontSize: "12px",
-      fontFamily: "Montserrat-SemiBold",
-      lineHeight: "20px",
-    },
-  },
 } as const;

@@ -1,4 +1,4 @@
-function formatTemperature({ temperature }: { temperature: number }) {
+function formatTemperature(temperature: number) {
   return `${Math.round(temperature)}°`;
 }
 
