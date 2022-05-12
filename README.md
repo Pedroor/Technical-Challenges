@@ -95,7 +95,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - Não consegui finalizar o suit de teste porém deixei o ambiente configurado
 
-- Havia a possibilidade de implementar algumas funcionalidades a mais porém acabei optando por fazer apenas o que foi solicitado, para qualquer outra dúvida sobre a utilização de uma determinada tecnologia ou padrão de código & afins, tenho um repositório onde há diversos pequenos projetos utilizando boa parte das ferramentas do ecossistema react como: Redux, Sagas, Duck Pattern, Redux-Toolkit, Zustand, Redux-Persist, GraphQL no link: 👋🏻 [Get in touch!](https://github.com/Pedroor/Technical-Challenges)
+- Havia a possibilidade de implementar algumas funcionalidades a mais porém acabei optando por fazer apenas o que foi solicitado, para qualquer outra dúvida sobre a utilização de uma determinada tecnologia ou padrão de código & afins, tenho um repositório onde há diversos projetos anteriormente desenvolvidos por mim utilizando boa parte das ferramentas do ecossistema react como: Redux, Sagas, Duck Pattern, Redux-Toolkit, Zustand, Redux-Persist, GraphQL no link: 👋🏻 [Get in touch!](https://github.com/Pedroor/Technical-Challenges)
 
 
 Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
