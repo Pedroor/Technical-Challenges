@@ -1,8 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { State, WeatherResponse } from "./types";
+import { State, WeatherResponse, DayProps, CurrentDayProps } from "./types";
 
 export const initialState = {
-  data: {} as WeatherResponse,
+  currentDay: {} as CurrentDayProps,
+  week: [{} as DayProps],
   loading: false,
   error: false,
   errorMessage: "",
@@ -20,24 +21,25 @@ const requestWeatherSuccess = (
   action: PayloadAction<WeatherResponse>
 ) => ({
   ...state,
-  data: action.payload,
+
+  currentDay: action.payload.currentDay,
+  week: action.payload.week,
   loading: false,
   error: false,
 });
 
-const requestWeatherFailed = (state: State, action: PayloadAction<string>) => ({
+const requestWeatherFailed = (state: State) => ({
   ...state,
   error: true,
   loading: false,
-  errorMessage: action.payload,
 });
 
 const weatherSlice = createSlice({
   name: "@weather",
   initialState,
   reducers: {
-    requestWeather,
     requestWeatherSuccess,
+    requestWeather,
     requestWeatherFailed,
   },
 });

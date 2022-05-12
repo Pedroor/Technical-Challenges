@@ -1,5 +1,6 @@
 export interface State {
-  data: WeatherResponse;
+  currentDay: CurrentDayProps;
+  week: DayProps[];
   loading: boolean;
   error: boolean;
   errorMessage: string;
@@ -11,6 +12,11 @@ export interface GetLocationPayload {
 }
 
 export interface WeatherResponse {
+  currentDay: CurrentDayProps;
+  week: DayProps[];
+}
+
+export interface CurrentDayProps {
   main: {
     temp: number;
     feels_like: number;
@@ -31,4 +37,26 @@ export interface WeatherResponse {
       icon: string;
     }
   ];
+}
+
+export interface DayProps {
+  feels_like: {
+    day: number;
+    night: number;
+    eve: number;
+    morn: number;
+  };
+  moon_phase: number;
+  moon_rise: number;
+  dt: number;
+  moonset: number;
+  pop: number;
+  temp: {
+    day: number;
+    min: number;
+    max: number;
+    night: number;
+    eve: number;
+    morn: number;
+  };
 }
