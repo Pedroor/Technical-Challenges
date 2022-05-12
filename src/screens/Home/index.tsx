@@ -15,12 +15,13 @@ function Home() {
   const dispatch = useReduxDispatch();
   const { goBack } = useNavigation();
   const { main, name, sys } = useReduxSelector(
-    (state) => state.weather.currentDay
+    (state) => state?.weather?.currentDay
   );
-  const { loading } = useReduxSelector((state) => state.weather);
-  const { week } = useReduxSelector((state) => state.weather);
+  const { loading } = useReduxSelector((state) => state?.weather);
+  const { week } = useReduxSelector((state) => state?.weather);
 
-  const handleCallRefresh = async () => await dispatch(getWeather());
+  const handleCallRefresh = async () =>
+    await dispatch(getWeather({ onSuccess: () => {} }));
 
   return (
     <S.Container>
@@ -66,7 +67,7 @@ function Home() {
             color={theme.default.colors.white}
             fontWeight="bold"
           >
-            {formatTemperature(main.temp)}
+            {formatTemperature(main?.temp)}
           </Title>
 
           <S.Logo source={Icons.sun} />
@@ -79,7 +80,7 @@ function Home() {
             fontSize={22}
             color={theme.default.colors.white}
           >
-            {name} {sys.country && `, ${sys.country}`}
+            {name} {sys?.country && `, ${sys?.country}`}
           </Title>
         </Box>
       </Box>

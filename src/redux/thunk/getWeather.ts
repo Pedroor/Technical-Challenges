@@ -3,20 +3,16 @@ import { actions as weatherActions } from "../store/slices/weather";
 import { LocalizationService } from "../../utils";
 import api from "../../services/api";
 
-export function getWeather() {
+interface GetWeatherProps {
+  onSuccess: () => void;
+}
+
+export function getWeather({ onSuccess }: GetWeatherProps) {
   return async function middle(dispatch: Dispatch) {
     try {
       dispatch(weatherActions.requestWeather());
       const { latitude, longitude } =
         await LocalizationService.getCurrentPosition();
-
-      const currentDay = await api.get(`/weather`, {
-        params: {
-          lat: latitude,
-          lon: longitude,
-          units: "metric",
-        },
-      });
 
       const week = await api.get(`/onecall`, {
         params: {
@@ -27,8 +23,14 @@ export function getWeather() {
           exclude: "hourly,minutely,alerts",
         },
       });
+      const currentDay = await api.get(`/weather`, {
+        params: {
+          lat: latitude,
+          lon: longitude,
+          units: "metric",
+        },
+      });
 
-      console.log("currentDay", currentDay);
       if (currentDay && week) {
         dispatch(
           weatherActions.requestWeatherSuccess({
@@ -36,6 +38,7 @@ export function getWeather() {
             week: week.data.daily.slice(1, -1),
           })
         );
+        onSuccess();
       }
     } catch (_e) {
       dispatch(weatherActions.requestWeatherFailed());

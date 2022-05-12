@@ -1,18 +1,15 @@
-import { useCallback, useEffect, useState } from "react";
-import { PermissionStatus } from "react-native-permissions";
+import { useCallback, useEffect } from "react";
 import { LocalizationService, RequestPermissions } from "../../utils";
 import { useReduxDispatch } from "..";
 import { getWeather } from "../../redux/thunk/getWeather";
 import { actions as geolocationActions } from "../../redux/store/slices/geolocation";
 
 export function useFetchLocation() {
-  const [statusLocation, setStatusLocation] = useState<PermissionStatus>();
   const dispatch = useReduxDispatch();
 
   useEffect(() => {
     async () => {
-      const status = await RequestPermissions();
-      setStatusLocation(status);
+      await RequestPermissions();
     };
   });
 
@@ -21,9 +18,8 @@ export function useFetchLocation() {
     dispatch(geolocationActions.setLocation(position));
   }, []);
 
-  const handleGetWeather = useCallback(async () => {
-    dispatch(getWeather());
-  }, []);
-
-  return { handleFetchLocation, statusLocation, handleGetWeather };
+  return {
+    handleFetchLocation,
+    RequestPermissions,
+  };
 }

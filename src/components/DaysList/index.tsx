@@ -13,8 +13,8 @@ export function DaysList({ data }: Props) {
     ({ item }: ListRenderItemInfo<DayProps>) => (
       <DayCard
         timestamp={item.dt}
-        minTemp={item.temp.min}
-        maxTemp={item.temp.max}
+        minTemp={item?.temp?.min}
+        maxTemp={item?.temp?.max}
       />
     ),
     []

@@ -4,8 +4,8 @@ import { useNavigation } from "@react-navigation/core";
 import { Title } from "../../atomic/atoms";
 import { RequestPermissions } from "../../utils";
 import { useFetchLocation } from "../../hooks/useFetchLocation";
-import { useReduxSelector } from "../../hooks";
-
+import { useReduxSelector, useReduxDispatch } from "../../hooks";
+import { getWeather } from "../../redux/thunk/getWeather";
 import Loading from "../../components/Loading";
 import Button from "../../components/Button";
 import * as S from "./styles";
@@ -13,25 +13,34 @@ import * as theme from "../../styles/theme";
 import * as Icons from "../../assets";
 
 function Initial() {
-  const { handleFetchLocation, statusLocation, handleGetWeather } =
-    useFetchLocation();
+  const dispatch = useReduxDispatch();
+  const { handleFetchLocation } = useFetchLocation();
   const { loading } = useReduxSelector((state) => state.weather);
   const { navigate } = useNavigation();
 
   useEffect(() => {
-    RequestPermissions();
-    async () => await handleFetchLocation();
-  });
+    handleFetchLocation();
+  }, []);
+
+  const onSuccess = () => {
+    navigate("Home");
+  };
 
   const handleClickSingInButton = async () => {
-    if (statusLocation === "denied") {
+    const status = await RequestPermissions();
+    if (status !== "granted") {
       Alert.alert(
         "Weather Forecast",
-        "You need enabled location in this application!"
+        "You need enabled location in this application!",
+        [
+          {
+            text: "Ok",
+            onPress: () => RequestPermissions(),
+          },
+        ]
       );
     } else {
-      await handleGetWeather();
-      navigate("Home");
+      dispatch(getWeather({ onSuccess }));
     }
   };
 

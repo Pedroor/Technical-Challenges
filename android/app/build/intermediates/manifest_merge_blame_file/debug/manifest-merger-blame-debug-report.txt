@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.weather"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:5:5-80
+13-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:5:22-78
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:6:5-78
+14-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:6:22-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.125.0] /Users/pedroarthur/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.125.0] /Users/pedroarthur/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
+16
+17    <application
+17-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:8:5-27:19
+18        android:name="com.weather.MainApplication"
+18-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:9:7-38
+19        android:allowBackup="false"
+19-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:13:7-34
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.6.0] /Users/pedroarthur/.gradle/caches/transforms-3/5c61d7afbc1bcd99cb491da6ba2ee6c1/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:11:7-41
+23        android:label="@string/app_name"
+23-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:10:7-39
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:12:7-52
+25        android:theme="@style/AppTheme"
+25-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:14:7-38
+26        android:usesCleartextTraffic="true" >
+26-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/debug/AndroidManifest.xml:8:9-44
+27        <activity
+27-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/debug/AndroidManifest.xml:11:9-111
+28            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+28-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/debug/AndroidManifest.xml:11:19-83
+29            android:exported="false" />
+29-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/debug/AndroidManifest.xml:11:84-108
+30        <activity
+30-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:15:7-26:18
+31            android:name="com.weather.MainActivity"
+31-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:16:9-37
+32            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+32-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:18:9-118
+33            android:exported="true"
+33-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:21:9-32
+34            android:label="@string/app_name"
+34-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:17:9-41
+35            android:launchMode="singleTask"
+35-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:19:9-40
+36            android:windowSoftInputMode="adjustResize" >
+36-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:20:9-51
+37            <intent-filter>
+37-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:22:9-25:25
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:23:13-65
+38-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:23:21-62
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:24:13-73
+40-->/Users/pedroarthur/Facul/Weather-Builders/android/app/src/main/AndroidManifest.xml:24:23-70
+41            </intent-filter>
+42        </activity>
+43    </application>
+44
+45</manifest>
