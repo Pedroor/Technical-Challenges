@@ -9,9 +9,3 @@ test("should return the initial state", () => {
     longitude: 0,
   });
 });
-
-test("should be setLocatin", () => {
-  const previousState = {};
-
-  expect(geolocationReducer(previousState, actions.setLocation())).toEqual;
-});
