@@ -74,6 +74,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Permission-LocationAccuracy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Permission-LocationAlways.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Permission-LocationWhenInUse.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-weather-weatherTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -270,6 +285,11 @@
 			<false/>
 		</dict>
 		<key>libevent.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>react-native-config.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
