@@ -22,7 +22,7 @@
 </h1>
 
 ## :page_with_curl: Sobre
-Este repositório coloca em prática alguns dos conhecimentos e tecnicas desenvolvidas ao longe do tempo na carreira com React-Native Developer. Alguns pontos explorados no projeto foram:
+Este repositório tem com intuito a construção de um aplicativo mobile que verifica o clima baseado na localização do usuário o mesmo, coloca em prática alguns dos conhecimentos e tecnicas desenvolvidas ao longe do tempo na carreira com React-Native Developer. Alguns pontos explorados no projeto foram:
 
 - Arquitetura
 - Boas práticas de programação
