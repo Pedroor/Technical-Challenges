@@ -1,101 +1,87 @@
-
-
-<h1 align="center">
-  <img alt="Marvel" src="https://media.giphy.com/media/AeHLxU7TZXCPS/giphy.gif" width="350px" />
+<h1 align="center">..
+  <img alt="Wheater" src="https://media.giphy.com/media/AeHLxU7TZXCPS/giphy.gif" width="400px" />
 </h1>
-
-
 
 <p align="center">
   <a href="#page_with_curl-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#hammer-iniciando-mobile">Tecnologias</a>
-  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#books-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-começando">Começando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#thought_balloon-começando">Inspiração</a>
+  <a href="#hammer">Projetos</a>
+  &nbsp;&nbsp;&nbsp;
+ 
 </p>
 
-<h1 align="center">
- <img alt="Home" src="https://i.imgur.com/2EpflYx.png" width="400" />
- <img alt="Home" src="https://i.imgur.com/VIOE5sv.png" width="400" />
+## :page_with_curl: Sobre
 
+Este repositório contém os desafios técnicos que tive que desenvolver ao longo de alguns processos seletivos que participei durante minha jornada como desenvolvedor, cada pasta neste repositório é referente a um desafio específico onde há uma explicação do projeto, tecnologias utilizadas é como executar localmente.
+
+PS: Cada repositório possui um arquivo README específico explicando mais detalhadamente o que faz a aplicação.
+
+<h1 align="center">
+  <img alt="Marvel" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" width="250px" />
 </h1>
 
-## :page_with_curl: Sobre
-Este repositório tem com intuito a construção de um aplicativo mobile que verifica o clima baseado na localização do usuário o mesmo, coloca em prática alguns dos conhecimentos e tecnicas desenvolvidas ao longe do tempo na carreira com React-Native Developer. Alguns pontos explorados no projeto foram:
-
-- Arquitetura
-- Boas práticas de programação
-- Layout
-
 ## :hammer: Tecnologias
-
-Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React-Native CLI](https://reactnative.dev/docs/environment-setup)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [React-Toolkit](https://redux-toolkit.js.org/)
-- [React Navigation](https://reactnavigation.org/)
-- [Axios](https://github.com/axios/axios)
 - [Styled Components](https://styled-components.com/)
-- [VS Code](https://code.visualstudio.com/) com [Prettier](https://prettier.io/)
+- [React Query](https://react-query.tanstack.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/WrfJrT8.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/jo6FzkI.png" width="400" />
+  </h1>
+  
+  <h1 align="center">
+  <img alt="Wheater" src="https://media.giphy.com/media/TVpeXDi8xTlyo/giphy.gif" width="250px" />
+</h1>
+  
+##  :hammer: Tecnologias
+- [Expo](https://expo.io/)
+- [GraphQL](https://graphql.org/)
+- [ApolloClient](https://www.apollographql.com/docs/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://i.imgur.com/TcBdv0N.png" width="400" />
+ <img alt="Home" src="https://i.imgur.com/oUupQrS.png" width="400" />
+
+</h1>
+
+<h1 align="center">
+  <img alt="Marvel" src="https://wallpaperaccess.com/full/342092.jpg" width="250px" />
+</h1>
+
+## :hammer: Tecnologias
+
+- [Expo](https://expo.io/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [React Query](https://react-query.tanstack.com/)
+
+<h1 align="center">
+ <img alt="Home" src="https://media.tenor.com/images/b705d5681438f3ef56611f87fa707704/tenor.gif" width="400" />
+
+</h1>
 
 ## :books: Requisitos
+
 - Ter [**Git**](https://git-scm.com/) para clonar o projeto.
-- - Ter [**React-Native**](https://reactnative.dev/docs/environment-setup) configurado para executar o projeto.
 - Ter [**Node.js**](https://nodejs.org/en/) instalado.
 - Um dispositivo ou emulador iOS ou Android
 
-
 ## :rocket: Começando
-``` bash
+
+```bash
   # Clonar o projeto:
-  $ https://github.com/Pedroor/Weather-Builders.git
+  $ https://github.com/Pedroor/Technical-Challenges.git
 
   # Entrar no diretório:
-  $ cd Weather-Builders
-  
-  # Instalar as dependências:
-  $ yarn
-  $ cd ios && pod install
+  $ cd Technical-Challenges/Nome do Projeto desejado
 ```
 
-## :rocket: Configurando Env
-``` 
-  # Você vai precisar um arquivo .env e dentro dele colocar sua api-key de acordo com .env.example
-```
-
-## :iphone: Iniciando mobile Android
-```bash
-  # No mesmo diretorio abrir 2 consoles no terminal:
-  # No primeiro console:
-   
-  $ react-native start
-
-  # No segundo console:
-  $ yarn android
-```
-## :iphone: Iniciando mobile IOS
-```bash
-  # No mesmo diretorio abrir 2 consoles no terminal:
-  # No primeiro console:
-   
-  $ react-native start
-
-  # No segundo console:
-  $ yarn ios
-```
-
-# :thought_balloon: Considerações Técnicas
-
-- As tecnologias escolhidas para o projeto foram pensadas levando em consideração uma futura escalabilidade com foco em melhorar a manutenibilidade do código, por esse motivo o uso de Redux mesmo sem há necessidade de uso do mesmo.
-
-- Por conta do tempo acabei optando por um design bem minimalista.
-
-- Não consegui finalizar o suit de teste porém deixei o ambiente configurado
-
-- Havia a possibilidade de implementar algumas funcionalidades a mais porém acabei optando por fazer apenas o que foi solicitado, para qualquer outra dúvida sobre a utilização de uma determinada tecnologia ou padrão de código & afins, tenho um repositório onde há diversos projetos anteriormente desenvolvidos por mim utilizando boa parte das ferramentas do ecossistema react como: Redux, Sagas, Duck Pattern, Redux-Toolkit, Zustand, Redux-Persist, GraphQL no link: 👋🏻 [Get in touch!](https://github.com/Pedroor/Technical-Challenges)
-
+# :thought_balloon: Inspiração
 
 Feito com ❤️ por Pedro Arthur 👋🏻 [Get in touch!](https://github.com/Pedroor)
