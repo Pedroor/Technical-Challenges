@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
+

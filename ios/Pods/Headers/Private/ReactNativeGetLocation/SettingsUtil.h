@@ -1,1 +1,0 @@
-../../../../../node_modules/react-native-get-location/ios/ReactNativeGetLocationLibrary/SettingsUtil.h
