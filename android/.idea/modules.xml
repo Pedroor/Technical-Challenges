@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-33498753/react-native-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/-33498753/react-native-gradle-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weather.iml" filepath="$PROJECT_DIR$/.idea/modules/weather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/weather.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/weather.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1057816342/weather.react-native-community_geolocation.iml" filepath="$PROJECT_DIR$/.idea/modules/-1057816342/weather.react-native-community_geolocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-599743467/weather.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-599743467/weather.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1228854675/weather.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-1228854675/weather.react-native-screens.iml" />
+    </modules>
+  </component>
+</project>
